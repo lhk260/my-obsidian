@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "未命名 3",
+      "path": "未命名 3.md"
+    },
+    {
+      "basename": "diary",
+      "path": "diary/diary.md"
+    },
+    {
       "basename": "未命名 1",
-      "path": "dairy/daily/未命名 1.md"
+      "path": "diary/daily/未命名 1.md"
     },
     {
       "basename": "daily",
-      "path": "dairy/daily/daily.md"
-    },
-    {
-      "basename": "dairy",
-      "path": "dairy/dairy.md"
+      "path": "diary/daily/daily.md"
     },
     {
       "basename": "未命名 2",
@@ -18,35 +22,35 @@
     },
     {
       "basename": "2025-04-01-22-3",
-      "path": "dairy/daily/2025-04-01-22-3.md"
+      "path": "diary/daily/2025-04-01-22-3.md"
     },
     {
       "basename": "2025-03-01-19-7",
-      "path": "dairy/daily/2025-03-01-19-7.md"
+      "path": "diary/daily/2025-03-01-19-7.md"
     },
     {
       "basename": "2025-12-03-23-7",
-      "path": "dairy/daily/2025-12-03-23-7.md"
+      "path": "diary/daily/2025-12-03-23-7.md"
     },
     {
       "basename": "2025-12-03-22-6",
-      "path": "dairy/daily/2025-12-03-22-6.md"
+      "path": "diary/daily/2025-12-03-22-6.md"
     },
     {
       "basename": "20250104",
-      "path": "dairy/daily/20250104.md"
+      "path": "diary/daily/20250104.md"
     },
     {
       "basename": "20250108",
-      "path": "dairy/daily/20250108.md"
+      "path": "diary/daily/20250108.md"
     },
     {
       "basename": "20250110",
-      "path": "dairy/daily/20250110.md"
+      "path": "diary/daily/20250110.md"
     },
     {
       "basename": "20250111",
-      "path": "dairy/daily/20250111.md"
+      "path": "diary/daily/20250111.md"
     }
   ],
   "omittedPaths": [],
