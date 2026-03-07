@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "daily",
+      "path": "diary/daily/daily.md"
+    },
+    {
+      "basename": "未命名 3",
+      "path": "diary/daily/未命名 3.md"
+    },
+    {
       "basename": "2025-03-01-19-7",
       "path": "diary/daily/2025-03-01-19-7.md"
     },
@@ -49,16 +57,8 @@
       "path": "diary/daily/未命名 1.md"
     },
     {
-      "basename": "daily",
-      "path": "diary/daily/daily.md"
-    },
-    {
       "basename": "未命名 2",
       "path": "未命名 2.md"
-    },
-    {
-      "basename": "2025-12-03-23-7",
-      "path": "diary/daily/2025-12-03-23-7.md"
     }
   ],
   "omittedPaths": [],
