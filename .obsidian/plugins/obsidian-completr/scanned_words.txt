@@ -12637,6 +12637,8 @@ Oppenheim
 OneLLM
 Oracle
 Option
+OPI
+OrangePiAiPro
 and
 all
 amp
@@ -65757,6 +65759,8 @@ ontologies
 openmanus
 opacity
 ocfs
+orangePiAiPro
+orangepiaipro
 net
 nn
 need
@@ -69606,6 +69610,7 @@ noisy
 nano
 nanorc
 naming
+nmcli
 Network
 Nvidia
 NCNN
@@ -81714,6 +81719,7 @@ githubpage
 gained
 gawk
 glow
+gpio
 MLsystem
 MLsys
 Mlsys
@@ -85815,6 +85821,7 @@ MacPorts
 Misc
 MouseDragEnd
 MOSFET
+MasterPi
 JYY
 Jim
 Jina
@@ -93669,6 +93676,9 @@ workplace
 weight`
 wte`
 weekyear
+wlan
+wiringpi
+wiringOP
 lab
 lightning
 latex
@@ -101525,6 +101535,8 @@ Guangming
 Genesis
 Gong
 GPQA
+GPIO
+GiHub
 spring
 system
 size
@@ -118420,6 +118432,7 @@ multimodal
 modality
 modalities
 mouse
+microUSB
 blog
 batchsize
 batch
@@ -126679,6 +126692,7 @@ institution
 ipconfig
 inode
 imperative
+inet
 you
 yX
 yYX
@@ -177834,6 +177848,7 @@ WebText
 Wikipedia
 Welcome
 Walk
+WiringOP
 Values
 VP
 Vz
