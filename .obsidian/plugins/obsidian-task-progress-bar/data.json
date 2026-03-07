@@ -26,7 +26,7 @@
   "countSubLevel": true,
   "displayMode": "bracketFraction",
   "customFormat": "[{{COMPLETED}}/{{TOTAL}}]",
-  "showPercentage": true,
+  "showPercentage": false,
   "customizeProgressRanges": false,
   "progressRanges": [
     {
@@ -124,7 +124,7 @@
   "enableTaskGeniusIcons": false,
   "enablePriorityPicker": false,
   "enablePriorityKeyboardShortcuts": false,
-  "enableDatePicker": false,
+  "enableDatePicker": true,
   "recurrenceDateBase": "due",
   "taskFilter": {
     "enableTaskFilter": false,
@@ -158,7 +158,7 @@
     "incompletedDefaultHeadingName": "Incomplete Tasks"
   },
   "quickCapture": {
-    "enableQuickCapture": false,
+    "enableQuickCapture": true,
     "targetFile": "QuickCapture.md",
     "placeholder": "记录你的想法...",
     "appendToFile": "append",
@@ -356,7 +356,7 @@
     ],
     "taskContentFromMetadata": "title",
     "defaultTaskStatus": " ",
-    "enableWorkerProcessing": true,
+    "enableWorkerProcessing": false,
     "enableMtimeOptimization": true,
     "mtimeCacheSize": 10000
   },
@@ -365,7 +365,7 @@
   "focusHeading": "",
   "enableIndexer": true,
   "enableView": true,
-  "enableInlineEditor": true,
+  "enableInlineEditor": false,
   "enableDynamicMetadataPositioning": false,
   "defaultViewMode": "list",
   "globalFilterRules": {},
@@ -374,16 +374,6 @@
       "id": "inbox",
       "name": "收件箱",
       "icon": "inbox",
-      "type": "default",
-      "visible": true,
-      "hideCompletedAndAbandonedTasks": true,
-      "filterRules": {},
-      "filterBlanks": false
-    },
-    {
-      "id": "working-on",
-      "name": "进行中",
-      "icon": "timer",
       "type": "default",
       "visible": true,
       "hideCompletedAndAbandonedTasks": true,
@@ -413,185 +403,6 @@
       "hideCompletedAndAbandonedTasks": false,
       "filterRules": {},
       "filterBlanks": false
-    },
-    {
-      "id": "tags",
-      "name": "标签",
-      "icon": "tag",
-      "type": "default",
-      "visible": true,
-      "hideCompletedAndAbandonedTasks": false,
-      "filterRules": {},
-      "filterBlanks": false
-    },
-    {
-      "id": "flagged",
-      "name": "已标记",
-      "icon": "flag",
-      "type": "default",
-      "visible": true,
-      "hideCompletedAndAbandonedTasks": true,
-      "filterRules": {},
-      "filterBlanks": false
-    },
-    {
-      "id": "review",
-      "name": "回顾",
-      "icon": "eye",
-      "type": "default",
-      "visible": true,
-      "hideCompletedAndAbandonedTasks": false,
-      "filterRules": {},
-      "filterBlanks": false
-    },
-    {
-      "id": "calendar",
-      "name": "事件",
-      "icon": "calendar",
-      "type": "default",
-      "visible": true,
-      "hideCompletedAndAbandonedTasks": false,
-      "filterRules": {},
-      "filterBlanks": false,
-      "region": "bottom",
-      "specificConfig": {
-        "viewType": "calendar",
-        "hideWeekends": false,
-        "showWorkingHoursOnly": false,
-        "workingHoursStart": 9,
-        "workingHoursEnd": 18
-      }
-    },
-    {
-      "id": "kanban",
-      "name": "状态",
-      "icon": "kanban",
-      "type": "default",
-      "visible": true,
-      "hideCompletedAndAbandonedTasks": false,
-      "filterRules": {},
-      "filterBlanks": false,
-      "region": "bottom",
-      "specificConfig": {
-        "viewType": "kanban",
-        "showCheckbox": true,
-        "hideEmptyColumns": false,
-        "defaultSortField": "priority",
-        "defaultSortOrder": "desc",
-        "groupBy": "status"
-      }
-    },
-    {
-      "id": "gantt",
-      "name": "计划",
-      "icon": "chart-gantt",
-      "type": "default",
-      "visible": true,
-      "hideCompletedAndAbandonedTasks": false,
-      "filterRules": {},
-      "filterBlanks": false,
-      "region": "bottom",
-      "specificConfig": {
-        "viewType": "gantt",
-        "showTaskLabels": true,
-        "useMarkdownRenderer": true
-      }
-    },
-    {
-      "id": "habit",
-      "name": "习惯",
-      "icon": "calendar-clock",
-      "type": "default",
-      "visible": true,
-      "hideCompletedAndAbandonedTasks": false,
-      "filterRules": {},
-      "filterBlanks": false,
-      "region": "bottom"
-    },
-    {
-      "id": "table",
-      "name": "表格",
-      "icon": "table",
-      "type": "default",
-      "visible": true,
-      "hideCompletedAndAbandonedTasks": false,
-      "filterRules": {},
-      "filterBlanks": false,
-      "specificConfig": {
-        "viewType": "table",
-        "enableTreeView": true,
-        "enableLazyLoading": true,
-        "pageSize": 50,
-        "enableInlineEditing": true,
-        "visibleColumns": [
-          "status",
-          "content",
-          "priority",
-          "dueDate",
-          "startDate",
-          "scheduledDate",
-          "tags",
-          "project",
-          "context",
-          "filePath"
-        ],
-        "columnWidths": {
-          "status": 80,
-          "content": 300,
-          "priority": 100,
-          "dueDate": 120,
-          "startDate": 120,
-          "scheduledDate": 120,
-          "createdDate": 120,
-          "completedDate": 120,
-          "tags": 150,
-          "project": 150,
-          "context": 120,
-          "recurrence": 120,
-          "estimatedTime": 120,
-          "actualTime": 120,
-          "filePath": 200
-        },
-        "sortableColumns": true,
-        "resizableColumns": true,
-        "showRowNumbers": true,
-        "enableRowSelection": true,
-        "enableMultiSelect": true,
-        "defaultSortField": "",
-        "defaultSortOrder": "asc"
-      }
-    },
-    {
-      "id": "quadrant",
-      "name": "矩阵",
-      "icon": "layout-grid",
-      "type": "default",
-      "visible": true,
-      "hideCompletedAndAbandonedTasks": false,
-      "filterRules": {},
-      "filterBlanks": false,
-      "specificConfig": {
-        "viewType": "quadrant",
-        "hideEmptyQuadrants": false,
-        "autoUpdatePriority": true,
-        "autoUpdateTags": true,
-        "showTaskCount": true,
-        "defaultSortField": "priority",
-        "defaultSortOrder": "desc",
-        "urgentTag": "#urgent",
-        "importantTag": "#important",
-        "urgentThresholdDays": 3,
-        "usePriorityForClassification": false,
-        "urgentPriorityThreshold": 4,
-        "importantPriorityThreshold": 3,
-        "customQuadrantColors": false,
-        "quadrantColors": {
-          "urgentImportant": "#dc3545",
-          "notUrgentImportant": "#28a745",
-          "urgentNotImportant": "#ffc107",
-          "notUrgentNotImportant": "#6c757d"
-        }
-      }
     }
   ],
   "reviewSettings": {},
@@ -708,7 +519,7 @@
     "quickInputShowQuickActions": true
   },
   "fileFilter": {
-    "enabled": false,
+    "enabled": true,
     "mode": "blacklist",
     "rules": [],
     "scopeControls": {
@@ -818,11 +629,11 @@
   "enableCustomDateFormats": false,
   "customDateFormats": [],
   "onboarding": {
-    "completed": false,
-    "version": "",
+    "completed": true,
+    "version": "9.13.1",
     "configMode": "beginner",
     "skipOnboarding": false,
-    "completedAt": ""
+    "completedAt": "2026-03-07T14:51:00.692Z"
   },
   "fileSource": {
     "enabled": false,

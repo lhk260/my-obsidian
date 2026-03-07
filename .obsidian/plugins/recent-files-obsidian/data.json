@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "笔记的记录方法",
+      "path": "笔记的记录方法.md"
+    },
+    {
+      "basename": "2024-11-21 19-25 LLM Course for Busy People",
+      "path": "2024-11-21 19-25 LLM Course for Busy People.md"
+    },
+    {
+      "basename": "3",
+      "path": "3.md"
+    },
+    {
       "basename": "开发记录",
       "path": "具身智能开发/开发记录.md"
     },
     {
       "basename": "图",
       "path": "具身智能开发/图.md"
-    },
-    {
-      "basename": "week6-随机过程与Poisson过程",
-      "path": "大二下/概率论与数理统计/week6-随机过程与Poisson过程.md"
     },
     {
       "basename": "GPRO",
@@ -23,22 +31,6 @@
     {
       "basename": "POMDP的一些参数说明",
       "path": "easy-rl/POMDP的一些参数说明.md"
-    },
-    {
-      "basename": "week5-多维随机变量",
-      "path": "大二下/概率论与数理统计/week5-多维随机变量.md"
-    },
-    {
-      "basename": "week-5-傅里叶分解与傅里叶变换",
-      "path": "大二下/信号与系统/week-5-傅里叶分解与傅里叶变换.md"
-    },
-    {
-      "basename": "week5-3-集成运算放大电路2",
-      "path": "大二下/模电/week5-3-集成运算放大电路2.md"
-    },
-    {
-      "basename": "week5-1-集成运算放大电路1",
-      "path": "大二下/模电/week5-1-集成运算放大电路1.md"
     },
     {
       "basename": "prompt",
@@ -55,10 +47,6 @@
     {
       "basename": "deepseek-r2试用",
       "path": "deepseek-r2试用.md"
-    },
-    {
-      "basename": "棒球",
-      "path": "棒球.md"
     }
   ],
   "omittedPaths": [],
