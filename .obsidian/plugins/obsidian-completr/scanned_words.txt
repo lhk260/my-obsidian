@@ -4512,6 +4512,7 @@ cached
 conventions
 cancel
 chore
+counting
 Computer
 Concepts
 ChatGpt
@@ -8783,6 +8784,9 @@ Canal
 Chuan
 Corporation
 Chebyshev
+Collections
+Comparable
+Cay
 Organazation
 OSTEP
 Operating
@@ -16796,6 +16800,10 @@ academy
 autogen
 assertEqual
 audio
+argparse
+absl
+allMatch
+averaging
 Design
 Data
 Database
@@ -20795,6 +20803,7 @@ Down
 Dirichlet
 Diamond
 Domestic
+Dyna
 The
 Team
 TVM
@@ -25060,6 +25069,8 @@ THUAUTO
 Thorough
 Track
 Tensorboard
+TIPS
+Toolsl
 Hardware
 HPC
 Hulu
@@ -29025,6 +29036,9 @@ HISTORY
 Homebrew
 Handle
 Holder
+Horstmann
+Hao
+Hanoi
 Software
 Structure
 System
@@ -33494,6 +33508,9 @@ Spotlight
 Specifications
 Standardized
 Scalability
+SHIFT
+Streams
+Stochasticity
 Interface
 Isomorphic
 Inference
@@ -49931,6 +49948,7 @@ poetry
 progress`
 proofs
 pane
+partially
 Understanding
 USTC
 Unix
@@ -65765,6 +65783,9 @@ opacity
 ocfs
 orangePiAiPro
 orangepiaipro
+observed
+observable
+observability
 net
 nn
 need
@@ -69615,6 +69636,8 @@ nano
 nanorc
 naming
 nmcli
+noremap
+noneMatch
 Network
 Nvidia
 NCNN
@@ -73413,6 +73436,8 @@ NoisyDQN
 Netty
 NeMo
 NPN
+NeoVim
+NVim
 Programming
 Parallel
 PLAM
@@ -77680,6 +77705,7 @@ Prohibited
 Pane
 Poisson
 POMDP
+Pong
 games
 go
 google
@@ -81725,6 +81751,8 @@ gawk
 glow
 gpio
 goverment
+groupingBy
+generalized
 MLsystem
 MLsys
 Mlsys
@@ -85828,6 +85856,8 @@ MouseDragEnd
 MOSFET
 MasterPi
 Mehrwert
+MODE
+MountainCar
 JYY
 Jim
 Jina
@@ -97759,6 +97789,7 @@ lint
 latest
 linearGradient
 landless
+lamdba
 GPU
 GPT
 Google
@@ -101545,6 +101576,9 @@ GPQA
 GPIO
 GiHub
 Govern
+GVim
+Grouping
+Gammon
 spring
 system
 size
@@ -106011,6 +106045,10 @@ subtraction
 scarce
 stderr
 speculation
+sourceforge
+summing
+streams
+steam
 torch
 training
 tune
@@ -110163,6 +110201,7 @@ transfomer
 terminfo
 titles
 tense
+toSet
 for
 fancy
 follow
@@ -114237,6 +114276,8 @@ fish
 functionality
 feasibility
 feat
+findAny
+findFirst
 model
 mass
 mindspore
@@ -118441,6 +118482,10 @@ modality
 modalities
 mouse
 microUSB
+mapToX
+mapToObj
+mapToDouble
+mapToLong
 blog
 batchsize
 batch
@@ -141831,6 +141876,7 @@ Quick
 QLorA
 Qformers
 Qiao
+Quickfix
 hook
 huggingface
 homework
@@ -157704,6 +157750,7 @@ Banach
 Barto
 Bai
 BIOS
+Backgammon
 rust
 recording
 ref
@@ -161860,6 +161907,7 @@ rewarding
 routers
 requested
 radialGradient
+removeIf
 xv
 xpy
 xlb
@@ -181731,6 +181779,7 @@ VFMM
 Visitors
 Visits
 VcXsrv
+VISUAL
 qq
 questions
 query
@@ -193138,6 +193187,7 @@ escape
 ext
 equations
 equipped
+embodiment
 vue
 vision
 variance
@@ -196940,6 +196990,7 @@ voice
 verbs
 valued
 vEthernet
+vimcdoc
 debug
 design
 dead
@@ -201227,6 +201278,7 @@ developments
 documentclass
 derivations
 diffs
+discrete
 Youtube
 YOLO
 Your

@@ -1,52 +1,60 @@
 {
   "recentFiles": [
     {
-      "basename": "笔记的记录方法",
-      "path": "笔记的记录方法.md"
+      "basename": "王树森Reinforcement_Learning学习笔记",
+      "path": "lecture/easy-rl/王树森Reinforcement_Learning学习笔记.md"
     },
     {
-      "basename": "2024-11-21 19-25 LLM Course for Busy People",
-      "path": "2024-11-21 19-25 LLM Course for Busy People.md"
+      "basename": "策略梯度算法",
+      "path": "lecture/easy-rl/策略梯度算法.md"
     },
     {
-      "basename": "3",
-      "path": "3.md"
+      "basename": "easy-rl-chapter3-表格型方法",
+      "path": "lecture/easy-rl/easy-rl-chapter3-表格型方法.md"
     },
     {
-      "basename": "开发记录",
-      "path": "具身智能开发/开发记录.md"
+      "basename": "easy-rl-chapter1-强化学习基础",
+      "path": "lecture/easy-rl/easy-rl-chapter1-强化学习基础.md"
     },
     {
-      "basename": "图",
-      "path": "具身智能开发/图.md"
+      "basename": "JAVA 8 - 备忘录",
+      "path": "CheatSheet/JAVA 8 - 备忘录.md"
     },
     {
-      "basename": "GPRO",
-      "path": "easy-rl/GPRO.md"
+      "basename": "VScode Cheat Sheet",
+      "path": "tools/Cheat Sheet/editors/VScode Cheat Sheet.md"
     },
     {
-      "basename": "RL 入门汇总",
-      "path": "easy-rl/RL 入门汇总.md"
+      "basename": "vim Cheat Sheet",
+      "path": "tools/Cheat Sheet/editors/vim Cheat Sheet.md"
     },
     {
-      "basename": "POMDP的一些参数说明",
-      "path": "easy-rl/POMDP的一些参数说明.md"
+      "basename": "nvim Cheat Sheet",
+      "path": "tools/Cheat Sheet/editors/nvim Cheat Sheet.md"
+    },
+    {
+      "basename": "emacs Cheat Sheet",
+      "path": "tools/Cheat Sheet/editors/emacs Cheat Sheet.md"
+    },
+    {
+      "basename": "nano Cheat Sheet",
+      "path": "tools/Cheat Sheet/editors/nano Cheat Sheet.md"
+    },
+    {
+      "basename": "cursor Cheat Sheet",
+      "path": "tools/Cheat Sheet/editors/cursor Cheat Sheet.md"
     },
     {
       "basename": "prompt",
-      "path": "prompt.md"
+      "path": "tools/AI/prompt.md"
     },
     {
-      "basename": "2025-W12-03",
-      "path": "dairy/weekly/2025-W12-03.md"
+      "basename": "prompt_writing",
+      "path": "tools/AI/prompt_writing.md"
     },
     {
-      "basename": "2025-12-03-23-7",
-      "path": "dairy/daily/2025-12-03-23-7.md"
-    },
-    {
-      "basename": "deepseek-r2试用",
-      "path": "deepseek-r2试用.md"
+      "basename": "LLM",
+      "path": "tools/AI/LLM.md"
     }
   ],
   "omittedPaths": [],
