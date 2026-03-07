@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "未命名 5",
-      "path": "未命名 5.md"
+      "basename": "diffusion",
+      "path": "bricks/diffusion/diffusion.md"
     },
     {
-      "basename": "未命名 4",
-      "path": "未命名 4.md"
+      "basename": "neural_network",
+      "path": "bricks/neural_network/neural_network.md"
     },
     {
-      "basename": "未命名 3",
-      "path": "未命名 3.md"
+      "basename": "transformer",
+      "path": "bricks/transformer/transformer.md"
+    },
+    {
+      "basename": "2026-03-07",
+      "path": "diary/daily/2026-03-07.md"
+    },
+    {
+      "basename": "2026-03-08",
+      "path": "diary/daily/2026-03-08.md"
     }
   ],
   "omittedPaths": [],
