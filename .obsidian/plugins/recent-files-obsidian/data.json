@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "template",
+      "path": "myconfig/template/template.md"
+    },
+    {
+      "basename": "README",
+      "path": "myconfig/README.md"
+    },
+    {
+      "basename": "myconfig",
+      "path": "myconfig/myconfig.md"
+    },
+    {
       "basename": "weekly",
       "path": "myconfig/template/weekly.md"
     },
@@ -9,20 +21,12 @@
       "path": "myconfig/template/update_template.md"
     },
     {
-      "basename": "template",
-      "path": "myconfig/template/template.md"
-    },
-    {
       "basename": "insert_clock",
       "path": "myconfig/template/insert_clock.md"
     },
     {
       "basename": "daily",
       "path": "myconfig/template/daily.md"
-    },
-    {
-      "basename": "myconfig",
-      "path": "myconfig/myconfig.md"
     },
     {
       "basename": "2025-03-01-19-7",
@@ -55,10 +59,6 @@
     {
       "basename": "20250111",
       "path": "dairy/daily/20250111.md"
-    },
-    {
-      "basename": "20250113",
-      "path": "dairy/daily/20250113.md"
     }
   ],
   "omittedPaths": [],
