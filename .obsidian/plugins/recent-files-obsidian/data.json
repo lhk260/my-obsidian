@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "开发记录",
+      "path": "具身智能开发/开发记录.md"
+    },
+    {
+      "basename": "图",
+      "path": "具身智能开发/图.md"
+    },
+    {
       "basename": "week6-随机过程与Poisson过程",
       "path": "大二下/概率论与数理统计/week6-随机过程与Poisson过程.md"
     },
@@ -51,14 +59,6 @@
     {
       "basename": "棒球",
       "path": "棒球.md"
-    },
-    {
-      "basename": "3",
-      "path": "3.md"
-    },
-    {
-      "basename": "2025-09-02-26-3",
-      "path": "dairy/daily/2025-09-02-26-3.md"
     }
   ],
   "omittedPaths": [],
