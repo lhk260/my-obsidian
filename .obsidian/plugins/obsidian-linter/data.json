@@ -283,7 +283,8 @@
     "zob_config",
     "Excalidraw",
     "zob_source",
-    "kanban"
+    "kanban",
+    "dairy/daily"
   ],
   "filesToIgnore": [
     {
