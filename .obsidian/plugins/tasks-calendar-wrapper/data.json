@@ -1,5 +1,5 @@
 {
-  "openViewOnStartup": false,
+  "openViewOnStartup": true,
   "filterEmpty": true,
   "excludePaths": [],
   "includePaths": [],
