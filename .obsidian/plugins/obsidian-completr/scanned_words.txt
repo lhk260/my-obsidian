@@ -33511,6 +33511,7 @@ Scalability
 SHIFT
 Streams
 Stochasticity
+SwiftUI
 Interface
 Isomorphic
 Inference
@@ -85858,6 +85859,7 @@ MasterPi
 Mehrwert
 MODE
 MountainCar
+Metal
 JYY
 Jim
 Jina
@@ -101579,6 +101581,7 @@ Govern
 GVim
 Grouping
 Gammon
+Ghostty
 spring
 system
 size

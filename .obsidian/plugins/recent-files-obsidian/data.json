@@ -1,64 +1,64 @@
 {
   "recentFiles": [
     {
+      "basename": "2025-04-01-22-3",
+      "path": "dairy/daily/2025-04-01-22-3.md"
+    },
+    {
+      "basename": "2025-03-01-19-7",
+      "path": "dairy/daily/2025-03-01-19-7.md"
+    },
+    {
+      "basename": "2025-12-03-23-7",
+      "path": "dairy/daily/2025-12-03-23-7.md"
+    },
+    {
+      "basename": "2025-12-03-22-6",
+      "path": "dairy/daily/2025-12-03-22-6.md"
+    },
+    {
+      "basename": "20250104",
+      "path": "dairy/daily/20250104.md"
+    },
+    {
+      "basename": "20250108",
+      "path": "dairy/daily/20250108.md"
+    },
+    {
+      "basename": "20250110",
+      "path": "dairy/daily/20250110.md"
+    },
+    {
+      "basename": "20250111",
+      "path": "dairy/daily/20250111.md"
+    },
+    {
+      "basename": "20250113",
+      "path": "dairy/daily/20250113.md"
+    },
+    {
+      "basename": "20250116",
+      "path": "dairy/daily/20250116.md"
+    },
+    {
       "basename": "未命名",
-      "path": "dairy/未命名.md"
+      "path": "dairy/daily/未命名.md"
     },
     {
-      "basename": "3",
-      "path": "杂/3.md"
+      "basename": "daily",
+      "path": "dairy/daily/daily.md"
     },
     {
-      "basename": "easy-rl-chapter1-强化学习基础",
-      "path": "lecture/easy-rl/easy-rl-chapter1-强化学习基础.md"
+      "basename": "dairy",
+      "path": "dairy/dairy.md"
     },
     {
-      "basename": "王树森Reinforcement_Learning学习笔记",
-      "path": "lecture/easy-rl/王树森Reinforcement_Learning学习笔记.md"
+      "basename": "未命名 1",
+      "path": "未命名 1.md"
     },
     {
-      "basename": "策略梯度算法",
-      "path": "lecture/easy-rl/策略梯度算法.md"
-    },
-    {
-      "basename": "easy-rl-chapter3-表格型方法",
-      "path": "lecture/easy-rl/easy-rl-chapter3-表格型方法.md"
-    },
-    {
-      "basename": "JAVA 8 - 备忘录",
-      "path": "CheatSheet/JAVA 8 - 备忘录.md"
-    },
-    {
-      "basename": "VScode Cheat Sheet",
-      "path": "tools/Cheat Sheet/editors/VScode Cheat Sheet.md"
-    },
-    {
-      "basename": "vim Cheat Sheet",
-      "path": "tools/Cheat Sheet/editors/vim Cheat Sheet.md"
-    },
-    {
-      "basename": "nvim Cheat Sheet",
-      "path": "tools/Cheat Sheet/editors/nvim Cheat Sheet.md"
-    },
-    {
-      "basename": "emacs Cheat Sheet",
-      "path": "tools/Cheat Sheet/editors/emacs Cheat Sheet.md"
-    },
-    {
-      "basename": "nano Cheat Sheet",
-      "path": "tools/Cheat Sheet/editors/nano Cheat Sheet.md"
-    },
-    {
-      "basename": "cursor Cheat Sheet",
-      "path": "tools/Cheat Sheet/editors/cursor Cheat Sheet.md"
-    },
-    {
-      "basename": "prompt",
-      "path": "tools/AI/prompt.md"
-    },
-    {
-      "basename": "prompt_writing",
-      "path": "tools/AI/prompt_writing.md"
+      "basename": "未命名",
+      "path": "未命名.md"
     }
   ],
   "omittedPaths": [],
