@@ -29,7 +29,7 @@
   "showSubtasksInTaskBlocks": true,
   "icals": [],
   "colorOverrides": [],
-  "releaseNotes": false,
+  "releaseNotes": true,
   "taskStatusOnCreation": " ",
   "eventFormatOnCreation": "task",
   "sortTasksInPlanAfterEdit": true,

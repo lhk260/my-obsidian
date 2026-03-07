@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "未命名",
+      "path": "dairy/未命名.md"
+    },
+    {
+      "basename": "3",
+      "path": "杂/3.md"
+    },
+    {
+      "basename": "easy-rl-chapter1-强化学习基础",
+      "path": "lecture/easy-rl/easy-rl-chapter1-强化学习基础.md"
+    },
+    {
       "basename": "王树森Reinforcement_Learning学习笔记",
       "path": "lecture/easy-rl/王树森Reinforcement_Learning学习笔记.md"
     },
@@ -11,10 +23,6 @@
     {
       "basename": "easy-rl-chapter3-表格型方法",
       "path": "lecture/easy-rl/easy-rl-chapter3-表格型方法.md"
-    },
-    {
-      "basename": "easy-rl-chapter1-强化学习基础",
-      "path": "lecture/easy-rl/easy-rl-chapter1-强化学习基础.md"
     },
     {
       "basename": "JAVA 8 - 备忘录",
@@ -51,10 +59,6 @@
     {
       "basename": "prompt_writing",
       "path": "tools/AI/prompt_writing.md"
-    },
-    {
-      "basename": "LLM",
-      "path": "tools/AI/LLM.md"
     }
   ],
   "omittedPaths": [],
