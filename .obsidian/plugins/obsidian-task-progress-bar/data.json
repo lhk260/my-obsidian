@@ -966,7 +966,7 @@
       "ws_1772891987579_58m18v3k5": {
         "id": "ws_1772891987579_58m18v3k5",
         "name": "Default",
-        "updatedAt": 1772898811007,
+        "updatedAt": 1772898962003,
         "settings": {
           "fluentFilterState": {
             "today": {
@@ -982,7 +982,7 @@
             "inbox": {
               "filters": {},
               "advancedFilter": null,
-              "viewMode": "tree"
+              "viewMode": "list"
             },
             "gantt": {
               "filters": {},
@@ -1003,9 +1003,39 @@
               "filters": {},
               "advancedFilter": null,
               "viewMode": "list"
+            },
+            "quadrant": {
+              "filters": {},
+              "advancedFilter": null,
+              "viewMode": "list"
+            },
+            "review": {
+              "filters": {},
+              "advancedFilter": null,
+              "viewMode": "list"
+            },
+            "flagged": {
+              "filters": {},
+              "advancedFilter": null,
+              "viewMode": "list"
+            },
+            "tags": {
+              "filters": {},
+              "advancedFilter": null,
+              "viewMode": "list"
+            },
+            "working-on": {
+              "filters": {},
+              "advancedFilter": null,
+              "viewMode": "list"
+            },
+            "projects": {
+              "filters": {},
+              "advancedFilter": null,
+              "viewMode": "list"
             }
           },
-          "fluentActiveViewId": "calendar"
+          "fluentActiveViewId": "kanban"
         }
       }
     }

@@ -23,7 +23,7 @@ share: false
 - [ ] [零基础Go+Gin+Gorm+Vue3+Redis+MySQL快速上手实战教程\[全栈实战\|Go Web开发\|前后端综合开发\]\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1BY4UefEkM)
 - [ ] [GoWeb进阶—两周开发一个基于vue+go+gin+mysql+redis的博客论坛web项目！！！从零到部署上线\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1Fb4y14747)
 - [ ] [go-admin/README.Zh-cn.md at master · go-admin-team/go-admin · GitHub](https://github.com/go-admin-team/go-admin/blob/master/README.Zh-cn.md)
-- [ ] [后端开发大师课程 \[Golang + Postgres +Docker\] (中文字幕)\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1dy4y1u7Sq)
+- [x] [后端开发大师课程 \[Golang + Postgres +Docker\] (中文字幕)\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1dy4y1u7Sq) 🛫 2026-03-07 ✅ 2026-03-07
 
 ## `array` 和 `slice` 的区别
 
