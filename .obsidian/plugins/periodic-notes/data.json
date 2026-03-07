@@ -3,7 +3,7 @@
   "hasMigratedDailyNoteSettings": true,
   "hasMigratedWeeklyNoteSettings": true,
   "daily": {
-    "format": "YYYY-WW-MM-DD-E",
+    "format": "YYYY-MM-DD",
     "folder": "diary/daily",
     "template": "zob_config/template/daily.md",
     "enabled": true
