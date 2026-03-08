@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "git",
+      "path": "skills/git/git.md"
+    },
+    {
+      "basename": "skills",
+      "path": "skills/skills.md"
+    },
+    {
+      "basename": "代码",
+      "path": "skills/md/代码.md"
+    },
+    {
+      "basename": "表格",
+      "path": "skills/md/表格.md"
+    },
+    {
+      "basename": "标题",
+      "path": "skills/md/标题.md"
+    },
+    {
+      "basename": "数学1",
+      "path": "skills/md/数学1.md"
+    },
+    {
       "basename": "dreamdojo",
       "path": "paper_note/worldmodel_for_robot/dreamdojo.md"
     },
@@ -35,10 +59,6 @@
     {
       "basename": "paper",
       "path": "paper/paper.md"
-    },
-    {
-      "basename": "worldmodel_for_robot",
-      "path": "paper_note/worldmodel_for_robot/worldmodel_for_robot.md"
     }
   ],
   "omittedPaths": [],
