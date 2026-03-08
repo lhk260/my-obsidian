@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "2026-03-07",
+      "path": "diary/daily/2026-03-07.md"
+    },
+    {
+      "basename": "2026-03-08",
+      "path": "diary/daily/2026-03-08.md"
+    },
+    {
       "basename": "未命名",
       "path": "bricks/未命名/未命名.md"
     },
@@ -19,14 +27,6 @@
     {
       "basename": "transformer",
       "path": "bricks/transformer/transformer.md"
-    },
-    {
-      "basename": "2026-03-07",
-      "path": "diary/daily/2026-03-07.md"
-    },
-    {
-      "basename": "2026-03-08",
-      "path": "diary/daily/2026-03-08.md"
     }
   ],
   "omittedPaths": [],
