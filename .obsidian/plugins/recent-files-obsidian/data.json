@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "未命名 1",
+      "path": "paper/worldmodel_for_robot/未命名 1.md"
+    },
+    {
+      "basename": "robodream",
+      "path": "paper/worldmodel_for_robot/robodream.md"
+    },
+    {
+      "basename": "dreamdojo",
+      "path": "paper/worldmodel_for_robot/dreamdojo.md"
+    },
+    {
+      "basename": "Ctrl-world",
+      "path": "paper/worldmodel_for_robot/Ctrl-world.md"
+    },
+    {
+      "basename": "未命名",
+      "path": "paper/worldmodel_for_robot/未命名.md"
+    },
+    {
+      "basename": "worldmodel_for_robot",
+      "path": "paper/worldmodel_for_robot/worldmodel_for_robot.md"
+    },
+    {
+      "basename": "2026-03-08",
+      "path": "diary/daily/2026-03-08.md"
+    },
+    {
+      "basename": "2026.3.8",
+      "path": "thoughts/2026.3.8.md"
+    },
+    {
       "basename": "数学1",
       "path": "skills/md/数学1.md"
     },
@@ -27,34 +59,6 @@
     {
       "basename": "强调",
       "path": "skills/md/强调.md"
-    },
-    {
-      "basename": "内嵌html",
-      "path": "skills/md/内嵌html.md"
-    },
-    {
-      "basename": "列表",
-      "path": "skills/md/列表.md"
-    },
-    {
-      "basename": "链接",
-      "path": "skills/md/链接.md"
-    },
-    {
-      "basename": "未命名 1",
-      "path": "未命名 1.md"
-    },
-    {
-      "basename": "换行",
-      "path": "skills/md/换行.md"
-    },
-    {
-      "basename": "高级",
-      "path": "skills/md/高级.md"
-    },
-    {
-      "basename": "分割线",
-      "path": "skills/md/分割线.md"
     }
   ],
   "omittedPaths": [],
