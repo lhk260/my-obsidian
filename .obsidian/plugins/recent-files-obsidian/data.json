@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "paper",
+      "path": "paper/paper.md"
+    },
+    {
+      "basename": "worldmodel_for_robot",
+      "path": "paper_note/worldmodel_for_robot/worldmodel_for_robot.md"
+    },
+    {
       "basename": "Ctrl-world",
-      "path": "paper/worldmodel_for_robot/Ctrl-world.md"
+      "path": "paper_note/worldmodel_for_robot/Ctrl-world.md"
     },
     {
       "basename": "2026.3.8",
@@ -10,19 +18,15 @@
     },
     {
       "basename": "dreamdojo",
-      "path": "paper/worldmodel_for_robot/dreamdojo.md"
+      "path": "paper_note/worldmodel_for_robot/dreamdojo.md"
     },
     {
       "basename": "robodream",
-      "path": "paper/worldmodel_for_robot/robodream.md"
+      "path": "paper_note/worldmodel_for_robot/robodream.md"
     },
     {
       "basename": "self-forcing",
-      "path": "paper/worldmodel_for_robot/self-forcing.md"
-    },
-    {
-      "basename": "worldmodel_for_robot",
-      "path": "paper/worldmodel_for_robot/worldmodel_for_robot.md"
+      "path": "paper_note/worldmodel_for_robot/self-forcing.md"
     },
     {
       "basename": "2026-03-08",
