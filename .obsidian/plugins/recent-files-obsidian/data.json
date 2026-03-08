@@ -1,64 +1,64 @@
 {
   "recentFiles": [
     {
-      "basename": "未命名",
-      "path": "skills/md/未命名.md"
+      "basename": "数学2",
+      "path": "skills/md/数学2.md"
     },
     {
-      "basename": "未命名",
-      "path": "未命名.md"
+      "basename": "数学1",
+      "path": "skills/md/数学1.md"
+    },
+    {
+      "basename": "latex",
+      "path": "skills/latex/latex.md"
+    },
+    {
+      "basename": "转义字符",
+      "path": "skills/md/转义字符.md"
     },
     {
       "basename": "md",
       "path": "skills/md/md.md"
     },
     {
-      "basename": "md文件语法",
-      "path": "skills/latex/md文件语法.md"
+      "basename": "引用",
+      "path": "skills/md/引用.md"
     },
     {
-      "basename": "未命名",
-      "path": "paper/worldmodel_for_robot/未命名.md"
+      "basename": "图片",
+      "path": "skills/md/图片.md"
     },
     {
-      "basename": "template",
-      "path": "zob_config/template/template.md"
+      "basename": "强调",
+      "path": "skills/md/强调.md"
     },
     {
-      "basename": "update_template",
-      "path": "zob_config/template/update_template.md"
+      "basename": "内嵌html",
+      "path": "skills/md/内嵌html.md"
     },
     {
-      "basename": "README",
-      "path": "zob_config/README.md"
+      "basename": "列表",
+      "path": "skills/md/列表.md"
     },
     {
-      "basename": "article",
-      "path": "zob_config/template/article.md"
+      "basename": "链接",
+      "path": "skills/md/链接.md"
     },
     {
-      "basename": "js",
-      "path": "zob_config/js/js.md"
+      "basename": "未命名 1",
+      "path": "未命名 1.md"
     },
     {
-      "basename": "thoughts_search_dataviewjs",
-      "path": "zob_config/js/thoughts_search_dataviewjs.md"
+      "basename": "换行",
+      "path": "skills/md/换行.md"
     },
     {
-      "basename": "zob_config",
-      "path": "zob_config/zob_config.md"
+      "basename": "高级",
+      "path": "skills/md/高级.md"
     },
     {
-      "basename": "myconfig",
-      "path": "zob_config/myconfig.md"
-    },
-    {
-      "basename": "代码备份",
-      "path": "zob_config/template/代码备份.md"
-    },
-    {
-      "basename": "daily",
-      "path": "zob_config/template/daily.md"
+      "basename": "分割线",
+      "path": "skills/md/分割线.md"
     }
   ],
   "omittedPaths": [],

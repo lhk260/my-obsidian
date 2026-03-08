@@ -4520,6 +4520,9 @@ capable
 challenging
 competitions
 cpuinfo
+castle
+chart
+colorname
 Computer
 Concepts
 ChatGpt
@@ -8794,6 +8797,10 @@ Chebyshev
 Collections
 Comparable
 Cay
+CommonMark
+Caption
+Chatpers
+CTeX
 Organazation
 OSTEP
 Operating
@@ -12650,6 +12657,8 @@ Oracle
 Option
 OPI
 OrangePiAiPro
+Omega
+Official
 and
 all
 amp
@@ -16812,6 +16821,10 @@ absl
 allMatch
 averaging
 achieved
+asterisks
+abbrvnat
+abbrv
+although
 Design
 Data
 Database
@@ -20812,6 +20825,11 @@ Dirichlet
 Diamond
 Domestic
 Dyna
+Dorothy
+Donald
+Dispersalinthecontemporaryunitedstates
+Dispersal
+DispersalinthecontemporaryUnitedStates
 The
 Team
 TVM
@@ -25079,6 +25097,11 @@ Track
 Tensorboard
 TIPS
 Toolsl
+TeX
+TeXworks
+TeXstudio
+TUNA
+Typeset
 Hardware
 HPC
 Hulu
@@ -33522,6 +33545,11 @@ Streams
 Stochasticity
 SwiftUI
 Solely
+Shiprock
+Syntax
+Simplenote
+Subsections
+Sigma
 Interface
 Isomorphic
 Inference
@@ -37509,6 +37537,10 @@ Including
 Insights
 ILSVRC
 Ilya
+Italicized
+ImageFilename
+Indices
+Includes
 And
 Algorithm
 Analysis
@@ -41731,6 +41763,8 @@ Align
 Ablation
 Amazon
 Alex
+Abort
+Abbrv
 java
 jyy
 js
@@ -49970,6 +50004,11 @@ preprocess
 proc
 pacman
 prober
+pots
+pdfTeX
+pdfLaTeX
+psi
+plainnat
 Understanding
 USTC
 Unix
@@ -53935,6 +53974,8 @@ USER
 ULIP
 Upwork
 UMich
+United
+Unsrt
 Linux
 Learning
 Large
@@ -57893,6 +57934,10 @@ Leaving
 LOTUS
 LSVRC
 LANG
+Love
+Live
+Libraries
+LATEX
 Kernel
 Kernal
 Keys
@@ -61821,6 +61866,8 @@ Kaipeng
 Kong
 Kvantum
 KvMojave
+Knuth
+Koppe
 os
 of
 on
@@ -65813,6 +65860,7 @@ observable
 observability
 overfitting
 obtain
+omega
 net
 nn
 need
@@ -69667,6 +69715,8 @@ noremap
 noneMatch
 nets
 networkmanager
+nano`
+natbib
 Network
 Nvidia
 NCNN
@@ -73468,6 +73518,8 @@ NPN
 NeoVim
 NVim
 NetworkManager
+Notepad
+Natbib
 Programming
 Parallel
 PLAM
@@ -77736,6 +77788,10 @@ Pane
 Poisson
 POMDP
 Pong
+Paragraph
+Profits
+Powers
+Psi
 games
 go
 google
@@ -81787,6 +81843,7 @@ grille
 gen`
 grub
 grub`
+graphicx
 MLsystem
 MLsys
 Mlsys
@@ -85893,6 +85950,10 @@ Mehrwert
 MODE
 MountainCar
 Metal
+Markdeep
+MacTeX
+MikTeX
+MacOSX
 JYY
 Jim
 Jina
@@ -93751,6 +93812,8 @@ wlan
 wiringpi
 wiringOP
 winning
+wood
+workbook
 lab
 lightning
 latex
@@ -97830,6 +97893,7 @@ leopard
 locale
 lingxi
 loglevel
+love
 GPU
 GPT
 Google
@@ -101622,6 +101686,7 @@ Gammon
 Ghostty
 Goolge
 GRUB
+Gardens
 spring
 system
 size
@@ -106098,6 +106163,7 @@ sexy
 substantially
 segmentation
 systemctl
+sweep
 torch
 training
 tune
@@ -110252,6 +110318,10 @@ titles
 tense
 toSet
 tutprial
+tabs
+typeset
+typesetting
+tabular
 for
 fancy
 follow
@@ -114329,6 +114399,7 @@ feat
 findAny
 findFirst
 foundations
+fire
 model
 mass
 mindspore
@@ -118539,6 +118610,10 @@ mapToDouble
 mapToLong
 million
 motor
+meow
+mailto
+mathrm
+myimage
 blog
 batchsize
 batch
@@ -122657,6 +122732,9 @@ blend
 bind
 bell
 boxed
+beautiful
+bade
+backslash
 is
 inference
 in
@@ -126800,6 +126878,10 @@ inode
 imperative
 inet
 illustrated
+italic
+incollection
+inproceedings
+installing
 you
 yX
 yYX
@@ -138093,6 +138175,7 @@ Fisher
 FID
 ForwardX
 Flink
+Figure
 Quant
 Qa
 QR
@@ -149931,6 +150014,10 @@ unreferenced
 useradd
 users
 ucode
+underscores
+united
+unsrtnat
+unsrt
 kernel
 kickstart
 kdd
@@ -153781,6 +153868,7 @@ keepdims
 kanban
 keywords
 kurtosis
+kettles
 BladeDISC
 Bagua
 Blog
@@ -157808,6 +157896,7 @@ Barto
 Bai
 BIOS
 Backgammon
+BibTeX
 rust
 recording
 ref
@@ -161968,6 +162057,7 @@ removeIf
 recently
 reformulate
 removable
+rooms
 xv
 xpy
 xlb
@@ -165707,6 +165797,7 @@ xserver
 xclock
 xfsprogs
 xclip
+xeLaTeX
 Effective
 Edx
 Elements
@@ -169693,6 +169784,8 @@ EuroSys
 EXPANSION
 EXIT
 EXIF
+Email
+Editors
 Raft
 Rocksdb
 Reader
@@ -173907,6 +174000,7 @@ Reply
 Rewards
 RLHFL
 Richaed
+Revenue
 WiscKey
 Web
 WIFI
@@ -177970,6 +178064,11 @@ Welcome
 Walk
 WiringOP
 WhiteSur
+Witch
+Without
+Wikibook
+Warning
+Workbook
 Values
 VP
 Vz
@@ -185537,6 +185636,7 @@ qcNaOanhh
 qrcode
 questionnaires
 quotes
+quarterly
 zsm
 zn
 zO
@@ -193255,6 +193355,7 @@ explicitly
 extremely
 echo
 efibootmgr
+ever
 vue
 vision
 variance
@@ -201347,6 +201448,7 @@ derivations
 diffs
 discrete
 dirty
+downloadable
 Youtube
 YOLO
 Your
@@ -208867,6 +208969,8 @@ XLaunch
 Xserver
 Xibin
 Xiangyu
+XeTeX
+XeLaTeX
 ßc
 ß`
 ßS
