@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Ctrl-world",
+      "path": "paper/worldmodel_for_robot/Ctrl-world.md"
+    },
+    {
+      "basename": "2026.3.8",
+      "path": "thoughts/2026.3.8.md"
+    },
+    {
       "basename": "dreamdojo",
       "path": "paper/worldmodel_for_robot/dreamdojo.md"
     },
@@ -13,20 +21,12 @@
       "path": "paper/worldmodel_for_robot/self-forcing.md"
     },
     {
-      "basename": "Ctrl-world",
-      "path": "paper/worldmodel_for_robot/Ctrl-world.md"
-    },
-    {
       "basename": "worldmodel_for_robot",
       "path": "paper/worldmodel_for_robot/worldmodel_for_robot.md"
     },
     {
       "basename": "2026-03-08",
       "path": "diary/daily/2026-03-08.md"
-    },
-    {
-      "basename": "2026.3.8",
-      "path": "thoughts/2026.3.8.md"
     },
     {
       "basename": "数学1",
