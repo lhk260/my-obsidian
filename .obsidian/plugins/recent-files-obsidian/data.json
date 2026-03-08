@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "LLM",
+      "path": "tools/AI/LLM.md"
+    },
+    {
+      "basename": "ctrl-world",
+      "path": "paper/ctrl-world.md"
+    },
+    {
+      "basename": "self-forcing",
+      "path": "paper/self-forcing.md"
+    },
+    {
+      "basename": "dreamdojo",
+      "path": "paper/dreamdojo.md"
+    },
+    {
+      "basename": "paper",
+      "path": "paper/paper.md"
+    },
+    {
+      "basename": "linux",
+      "path": "skills/linux/linux.md"
+    },
+    {
       "basename": "git",
       "path": "skills/git/git.md"
     },
@@ -35,30 +59,6 @@
     {
       "basename": "robodream",
       "path": "paper_note/worldmodel_for_robot/robodream.md"
-    },
-    {
-      "basename": "research_map",
-      "path": "zob_config/template/research_map.md"
-    },
-    {
-      "basename": "代码备份",
-      "path": "zob_config/template/代码备份.md"
-    },
-    {
-      "basename": "thoughts_search_dataviewjs",
-      "path": "zob_config/js/thoughts_search_dataviewjs.md"
-    },
-    {
-      "basename": "paper_template",
-      "path": "zob_config/template/paper_template.md"
-    },
-    {
-      "basename": "self-forcing",
-      "path": "paper_note/worldmodel_for_robot/self-forcing.md"
-    },
-    {
-      "basename": "paper",
-      "path": "paper/paper.md"
     }
   ],
   "omittedPaths": [],

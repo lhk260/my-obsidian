@@ -115058,6 +115058,8 @@ tJc
 tkE
 tznf
 this
+token
+transformer
 Fullbanner
 Feedback
 False
@@ -118043,6 +118045,7 @@ kbrf
 kYagRNj
 kki
 kEU
+keys
 version
 visionlanguageactionmodelopenworld
 visionlanguageactionflowmodel
@@ -118700,6 +118703,7 @@ vGO
 v`R
 vmg`
 vNO
+values
 Enhancing
 ExtGState
 Encoding
@@ -119490,6 +119494,7 @@ EhS
 Esf
 EOmYO
 EgvX
+Embedding
 XML
 XIEHRG
 XK
@@ -122426,6 +122431,7 @@ moN
 mathjax
 mathjaxjs
 more
+math
 rdf
 rights
 rt
@@ -124011,6 +124017,7 @@ RnU
 RBH
 RKv
 Rice
+Reference
 dc
 default
 dC
@@ -129060,6 +129067,7 @@ qfj
 qZd
 q`T
 qXM
+queries
 zo
 z`
 zRc
