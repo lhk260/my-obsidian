@@ -1,64 +1,44 @@
 {
   "recentFiles": [
     {
-      "basename": "paper",
-      "path": "paper/paper.md"
-    },
-    {
-      "basename": "worldmodel_for_robot",
-      "path": "paper_note/worldmodel_for_robot/worldmodel_for_robot.md"
+      "basename": "dreamdojo",
+      "path": "paper_note/worldmodel_for_robot/dreamdojo.md"
     },
     {
       "basename": "Ctrl-world",
       "path": "paper_note/worldmodel_for_robot/Ctrl-world.md"
     },
     {
-      "basename": "2026.3.8",
-      "path": "thoughts/2026.3.8.md"
-    },
-    {
-      "basename": "dreamdojo",
-      "path": "paper_note/worldmodel_for_robot/dreamdojo.md"
-    },
-    {
       "basename": "robodream",
       "path": "paper_note/worldmodel_for_robot/robodream.md"
+    },
+    {
+      "basename": "research_map",
+      "path": "zob_config/template/research_map.md"
+    },
+    {
+      "basename": "代码备份",
+      "path": "zob_config/template/代码备份.md"
+    },
+    {
+      "basename": "thoughts_search_dataviewjs",
+      "path": "zob_config/js/thoughts_search_dataviewjs.md"
+    },
+    {
+      "basename": "paper_template",
+      "path": "zob_config/template/paper_template.md"
     },
     {
       "basename": "self-forcing",
       "path": "paper_note/worldmodel_for_robot/self-forcing.md"
     },
     {
-      "basename": "2026-03-08",
-      "path": "diary/daily/2026-03-08.md"
+      "basename": "paper",
+      "path": "paper/paper.md"
     },
     {
-      "basename": "数学1",
-      "path": "skills/md/数学1.md"
-    },
-    {
-      "basename": "latex",
-      "path": "skills/latex/latex.md"
-    },
-    {
-      "basename": "转义字符",
-      "path": "skills/md/转义字符.md"
-    },
-    {
-      "basename": "md",
-      "path": "skills/md/md.md"
-    },
-    {
-      "basename": "引用",
-      "path": "skills/md/引用.md"
-    },
-    {
-      "basename": "图片",
-      "path": "skills/md/图片.md"
-    },
-    {
-      "basename": "强调",
-      "path": "skills/md/强调.md"
+      "basename": "worldmodel_for_robot",
+      "path": "paper_note/worldmodel_for_robot/worldmodel_for_robot.md"
     }
   ],
   "omittedPaths": [],
