@@ -1,32 +1,64 @@
 {
   "recentFiles": [
     {
-      "basename": "2026-03-08",
-      "path": "diary/daily/2026-03-08.md"
-    },
-    {
-      "basename": "2026-03-07",
-      "path": "diary/daily/2026-03-07.md"
+      "basename": "未命名",
+      "path": "skills/md/未命名.md"
     },
     {
       "basename": "未命名",
-      "path": "bricks/未命名/未命名.md"
+      "path": "未命名.md"
     },
     {
-      "basename": "vla",
-      "path": "bricks/vla/vla.md"
+      "basename": "md",
+      "path": "skills/md/md.md"
     },
     {
-      "basename": "diffusion",
-      "path": "bricks/diffusion/diffusion.md"
+      "basename": "md文件语法",
+      "path": "skills/latex/md文件语法.md"
     },
     {
-      "basename": "neural_network",
-      "path": "bricks/neural_network/neural_network.md"
+      "basename": "未命名",
+      "path": "paper/worldmodel_for_robot/未命名.md"
     },
     {
-      "basename": "transformer",
-      "path": "bricks/transformer/transformer.md"
+      "basename": "template",
+      "path": "zob_config/template/template.md"
+    },
+    {
+      "basename": "update_template",
+      "path": "zob_config/template/update_template.md"
+    },
+    {
+      "basename": "README",
+      "path": "zob_config/README.md"
+    },
+    {
+      "basename": "article",
+      "path": "zob_config/template/article.md"
+    },
+    {
+      "basename": "js",
+      "path": "zob_config/js/js.md"
+    },
+    {
+      "basename": "thoughts_search_dataviewjs",
+      "path": "zob_config/js/thoughts_search_dataviewjs.md"
+    },
+    {
+      "basename": "zob_config",
+      "path": "zob_config/zob_config.md"
+    },
+    {
+      "basename": "myconfig",
+      "path": "zob_config/myconfig.md"
+    },
+    {
+      "basename": "代码备份",
+      "path": "zob_config/template/代码备份.md"
+    },
+    {
+      "basename": "daily",
+      "path": "zob_config/template/daily.md"
     }
   ],
   "omittedPaths": [],
