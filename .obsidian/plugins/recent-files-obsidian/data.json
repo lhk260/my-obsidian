@@ -1,64 +1,60 @@
 {
   "recentFiles": [
     {
-      "basename": "self-forcing",
-      "path": "paper/self-forcing.md"
-    },
-    {
       "basename": "rise",
       "path": "paper/rise.md"
+    },
+    {
+      "basename": "implicitRDP",
+      "path": "paper/implicitRDP.md"
+    },
+    {
+      "basename": "Force-VLA",
+      "path": "paper/Force-VLA.md"
     },
     {
       "basename": "dreamdojo",
       "path": "paper/dreamdojo.md"
     },
     {
-      "basename": "paper",
-      "path": "paper/paper.md"
-    },
-    {
-      "basename": "latex",
-      "path": "skills/latex/latex.md"
-    },
-    {
-      "basename": "symbols",
-      "path": "skills/latex/symbols.pdf"
-    },
-    {
-      "basename": "标题",
-      "path": "skills/md/标题.md"
-    },
-    {
-      "basename": "数学1",
-      "path": "skills/md/数学1.md"
-    },
-    {
-      "basename": "images",
-      "path": "zob_source/images/images.md"
-    },
-    {
-      "basename": "zob_source",
-      "path": "zob_source/zob_source.md"
-    },
-    {
-      "basename": "2026.3.9",
-      "path": "thoughts/2026.3.9.md"
-    },
-    {
-      "basename": "2026.3.8",
-      "path": "thoughts/2026.3.8.md"
-    },
-    {
-      "basename": "computer vision in tsinghua",
-      "path": "lecture/computer vision in tsinghua/computer vision in tsinghua.md"
+      "basename": "ptld",
+      "path": "paper/ptld.md"
     },
     {
       "basename": "ctrl-world",
       "path": "paper/ctrl-world.md"
     },
     {
-      "basename": "2026-03-09",
-      "path": "diary/daily/2026-03-09.md"
+      "basename": "vlta",
+      "path": "paper/vlta.md"
+    },
+    {
+      "basename": "Tactile-VLA",
+      "path": "paper/Tactile-VLA.md"
+    },
+    {
+      "basename": "TLA",
+      "path": "paper/TLA.md"
+    },
+    {
+      "basename": "RDP",
+      "path": "paper/RDP.md"
+    },
+    {
+      "basename": "UniVTAC",
+      "path": "paper/UniVTAC.md"
+    },
+    {
+      "basename": "contact_aware_neural_dynamics",
+      "path": "paper/contact_aware_neural_dynamics.md"
+    },
+    {
+      "basename": "self-forcing",
+      "path": "paper/self-forcing.md"
+    },
+    {
+      "basename": "latex",
+      "path": "skills/latex/latex.md"
     }
   ],
   "omittedPaths": [],
