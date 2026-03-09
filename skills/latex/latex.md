@@ -453,7 +453,7 @@ Warning
 
 上标（Powers）使用 `^` 来表示，比如 `$n^2$` 生成的效果为 𝑛2![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 "n^2")．
 
-下标（Indices）使用 `_` 表示，比如 `$2_a$` 生成的效果为 2𝑎![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 "2_a")．
+下标（Indices）使用 `_` 表示，比如 `$2_a$` 生成的效果为 2𝑎![20](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 "2_a")．
 
 如果上标或下标的内容包含多个字符，请使用花括号包裹起来．比如 `$b_{a-2}$` 的效果为 𝑏𝑎−2![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 "b_{a-2}")．
 

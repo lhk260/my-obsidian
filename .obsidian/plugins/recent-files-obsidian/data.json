@@ -5,12 +5,36 @@
       "path": "paper/rise.md"
     },
     {
-      "basename": "self-forcing",
-      "path": "paper/self-forcing.md"
-    },
-    {
       "basename": "paper",
       "path": "paper/paper.md"
+    },
+    {
+      "basename": "latex",
+      "path": "skills/latex/latex.md"
+    },
+    {
+      "basename": "symbols",
+      "path": "skills/latex/symbols.pdf"
+    },
+    {
+      "basename": "标题",
+      "path": "skills/md/标题.md"
+    },
+    {
+      "basename": "数学1",
+      "path": "skills/md/数学1.md"
+    },
+    {
+      "basename": "images",
+      "path": "zob_source/images/images.md"
+    },
+    {
+      "basename": "zob_source",
+      "path": "zob_source/zob_source.md"
+    },
+    {
+      "basename": "self-forcing",
+      "path": "paper/self-forcing.md"
     },
     {
       "basename": "2026.3.9",
@@ -35,30 +59,6 @@
     {
       "basename": "skills",
       "path": "skills/skills.md"
-    },
-    {
-      "basename": "LLM",
-      "path": "tools/AI/LLM.md"
-    },
-    {
-      "basename": "dreamdojo",
-      "path": "paper/dreamdojo.md"
-    },
-    {
-      "basename": "linux",
-      "path": "skills/linux/linux.md"
-    },
-    {
-      "basename": "git",
-      "path": "skills/git/git.md"
-    },
-    {
-      "basename": "代码",
-      "path": "skills/md/代码.md"
-    },
-    {
-      "basename": "表格",
-      "path": "skills/md/表格.md"
     }
   ],
   "omittedPaths": [],
