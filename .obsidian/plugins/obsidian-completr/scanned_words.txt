@@ -9382,6 +9382,7 @@ CWRU
 CuF
 CdJ
 CVncu
+Cosmos
 Organazation
 OSTEP
 Operating
@@ -13565,6 +13566,7 @@ ONo
 OGD
 OzDd
 OlZ
+OtO
 and
 all
 amp
@@ -22314,6 +22316,8 @@ DCCB
 DCOu
 DGq`D
 Drdm
+DAgger
+DSRL
 The
 Team
 TVM
@@ -35918,6 +35922,7 @@ SoRO
 SNg
 SVud
 SrIJ
+SSIM
 Interface
 Isomorphic
 Inference
@@ -44704,6 +44709,8 @@ Awo
 AufhV
 AXSKo
 Ayrb
+Agibot
+AgileX
 java
 jyy
 js
@@ -62066,6 +62073,7 @@ LigN
 Lhm
 LiK
 LMPO
+Lprog
 Kernel
 Kernal
 Keys
@@ -66287,6 +66295,7 @@ KzU
 KVYGmF
 KsX
 KEmq
+Kinetix
 os
 of
 on
@@ -83367,6 +83376,7 @@ Pvs
 PDg
 PPr
 PaK
+PSNR
 games
 go
 google
@@ -109084,6 +109094,8 @@ GBk
 Gau
 GSo
 GrSb
+Genie
+Galaxea
 spring
 system
 size
@@ -111418,6 +111430,7 @@ sux
 sRAa
 s`b
 smi
+shot
 endobj
 end
 endstream
@@ -112815,6 +112828,13 @@ BfEQ
 BhX
 B`C
 BUt
+Byte
+BPE
+Base
+Bing
+Bin
+Bias
+Batching
 Yuchen
 Yp
 YC
@@ -115060,6 +115080,13 @@ tznf
 this
 token
 transformer
+tokens
+tokenizer
+trained
+tuning
+truthful
+together
+tOt
 Fullbanner
 Feedback
 False
@@ -115821,6 +115848,11 @@ Fdy
 FKdS
 FYd
 FBL
+Face
+FineWeb
+Few
+Fine
+Flash
 is
 id
 identifier
@@ -117308,6 +117340,7 @@ Vrv
 Vtn
 Vwg
 Vpe
+Video
 kpathsea
 kim
 ks
@@ -119495,6 +119528,13 @@ Esf
 EOmYO
 EgvX
 Embedding
+Emoji
+Exposition
+Examples
+Experimental
+Envisioner
+EMA
+Exposure
 XML
 XIEHRG
 XK
@@ -121658,6 +121698,9 @@ bJm
 baU
 bvx
 bnt
+bilibili
+bits
+base
 meta
 mq
 miller
@@ -122432,6 +122475,8 @@ mathjax
 mathjaxjs
 more
 math
+mini
+model
 rdf
 rights
 rt
@@ -124018,6 +124063,13 @@ RBH
 RKv
 Rice
 Reference
+Regurgitation
+Reinforcement
+Reward
+RLHF
+RISE
+Rollout
+RECAP
 dc
 default
 dC
@@ -124745,6 +124797,9 @@ dFr
 dkS
 dKXSX
 dfw
+deepseek
+dev
+dots
 funk
 foarforceawarereactivepolicy
 fitz
@@ -125474,6 +125529,7 @@ fo`
 fJz
 fFCA
 fbm
+failed
 he
 hZ
 human
@@ -126150,6 +126206,10 @@ htY
 hcar
 html
 head
+helpful
+harmless
+hyperbolic
+hat
 yk
 yl
 yH
@@ -126828,6 +126888,7 @@ yuCQe
 yra
 yqol
 your
+youtube
 WiMM
 Widths
 WinAnsiEncoding
@@ -127556,6 +127617,8 @@ WNq
 WJJ
 Word
 Wordpress
+Worked
+Warm
 Q`
 QL
 Qp
@@ -130492,6 +130555,7 @@ uMH
 uBs
 ucUhJ
 uzcX
+upload
 ÖWk
 Öp
 Ör
