@@ -9,8 +9,20 @@
       "path": "paper/contact_aware_neural_dynamics.md"
     },
     {
+      "basename": "UniVTAC",
+      "path": "paper/UniVTAC.md"
+    },
+    {
       "basename": "behavior synthesis",
       "path": "paper/behavior synthesis.md"
+    },
+    {
+      "basename": "TLA",
+      "path": "paper/TLA.md"
+    },
+    {
+      "basename": "Tactile-VLA",
+      "path": "paper/Tactile-VLA.md"
     },
     {
       "basename": "self-forcing",
@@ -29,12 +41,12 @@
       "path": "paper/ptld.md"
     },
     {
-      "basename": "Force-VLA",
-      "path": "paper/Force-VLA.md"
-    },
-    {
       "basename": "implicitRDP",
       "path": "paper/implicitRDP.md"
+    },
+    {
+      "basename": "Force-VLA",
+      "path": "paper/Force-VLA.md"
     },
     {
       "basename": "evaluating",
@@ -47,18 +59,6 @@
     {
       "basename": "vlta",
       "path": "paper/vlta.md"
-    },
-    {
-      "basename": "Tactile-VLA",
-      "path": "paper/Tactile-VLA.md"
-    },
-    {
-      "basename": "TLA",
-      "path": "paper/TLA.md"
-    },
-    {
-      "basename": "UniVTAC",
-      "path": "paper/UniVTAC.md"
     }
   ],
   "omittedPaths": [],

@@ -4876,6 +4876,7 @@ counterfactual
 consistent
 compliance
 collision
+contouring
 Computer
 Concepts
 ChatGpt
@@ -9460,6 +9461,7 @@ CErvP
 CausVid
 Chunked
 Contact
+Cramer
 Organazation
 OSTEP
 Operating
@@ -36176,6 +36178,7 @@ Stf
 Slpv
 Shqe
 Safety
+Stiffness
 Interface
 Isomorphic
 Inference
@@ -53960,6 +53963,7 @@ pdfcrypt
 prod
 planner
 pink
+pinching
 Understanding
 USTC
 Unix
@@ -62527,6 +62531,7 @@ LVxL
 LKMQ
 LWay
 LiJs
+Lagrangian
 Kernel
 Kernal
 Keys
@@ -92831,6 +92836,7 @@ MDSTI
 MHf
 MMRV
 MuJoCo
+Maximization
 JYY
 Jim
 Jina
@@ -113104,6 +113110,7 @@ evaluators
 error
 event
 estimation
+exploration
 Bi
 Border
 BS
@@ -113833,6 +113840,9 @@ BrA
 BZR
 Bridging
 Background
+Behavior
+Bound
+Behaviors
 Yuchen
 Yp
 YC
@@ -114601,6 +114611,7 @@ YlO
 YjAs
 YaoW
 YCB
+Yale
 Zheng
 ZI
 ZC
@@ -116262,6 +116273,7 @@ threshold
 trajectories
 transfer
 tracking
+trace
 Fullbanner
 Feedback
 False
@@ -117077,6 +117089,8 @@ Fly
 Forcing
 FPS
 FoundationPose
+Fisher
+Friction
 is
 id
 identifier
@@ -121034,6 +121048,7 @@ EQt
 EgoDex
 Encoder
 Evaluating
+Emergent
 XML
 XIEHRG
 XK
@@ -123381,6 +123396,7 @@ background
 brush
 banana
 block
+behaviors
 meta
 mq
 miller
@@ -125050,6 +125066,7 @@ rotation
 randomization
 representation
 robotics
+rubbing
 RDF
 Resources
 Rect
@@ -125939,6 +125956,8 @@ RTX
 Real
 Randomization
 RealSense
+Reading
+Rao
 dc
 default
 dC
@@ -126743,6 +126762,7 @@ damping
 detection
 domain
 drift
+deterministic
 funk
 foarforceawarereactivepolicy
 fitz
@@ -128294,6 +128314,7 @@ hazard
 handover
 hallucination
 hybrid
+hefting
 yk
 yl
 yH
@@ -129802,6 +129823,7 @@ WWAcA
 WIr
 WAN
 Warmup
+Weight
 Q`
 QL
 Qp
