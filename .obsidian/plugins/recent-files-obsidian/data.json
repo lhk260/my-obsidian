@@ -1,28 +1,48 @@
 {
   "recentFiles": [
     {
+      "basename": "ctrl-world",
+      "path": "paper/ctrl-world.md"
+    },
+    {
+      "basename": "contact_aware_neural_dynamics",
+      "path": "paper/contact_aware_neural_dynamics.md"
+    },
+    {
+      "basename": "behavior synthesis",
+      "path": "paper/behavior synthesis.md"
+    },
+    {
+      "basename": "self-forcing",
+      "path": "paper/self-forcing.md"
+    },
+    {
       "basename": "rise",
       "path": "paper/rise.md"
     },
     {
-      "basename": "implicitRDP",
-      "path": "paper/implicitRDP.md"
-    },
-    {
-      "basename": "Force-VLA",
-      "path": "paper/Force-VLA.md"
-    },
-    {
-      "basename": "dreamdojo",
-      "path": "paper/dreamdojo.md"
+      "basename": "RDP",
+      "path": "paper/RDP.md"
     },
     {
       "basename": "ptld",
       "path": "paper/ptld.md"
     },
     {
-      "basename": "ctrl-world",
-      "path": "paper/ctrl-world.md"
+      "basename": "Force-VLA",
+      "path": "paper/Force-VLA.md"
+    },
+    {
+      "basename": "implicitRDP",
+      "path": "paper/implicitRDP.md"
+    },
+    {
+      "basename": "evaluating",
+      "path": "paper/evaluating.md"
+    },
+    {
+      "basename": "dreamdojo",
+      "path": "paper/dreamdojo.md"
     },
     {
       "basename": "vlta",
@@ -37,24 +57,8 @@
       "path": "paper/TLA.md"
     },
     {
-      "basename": "RDP",
-      "path": "paper/RDP.md"
-    },
-    {
       "basename": "UniVTAC",
       "path": "paper/UniVTAC.md"
-    },
-    {
-      "basename": "contact_aware_neural_dynamics",
-      "path": "paper/contact_aware_neural_dynamics.md"
-    },
-    {
-      "basename": "self-forcing",
-      "path": "paper/self-forcing.md"
-    },
-    {
-      "basename": "latex",
-      "path": "skills/latex/latex.md"
     }
   ],
   "omittedPaths": [],
