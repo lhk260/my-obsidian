@@ -4877,6 +4877,11 @@ consistent
 compliance
 collision
 contouring
+cameras
+cloth
+conditioning
+controllability
+controllable
 Computer
 Concepts
 ChatGpt
@@ -9462,6 +9467,8 @@ CausVid
 Chunked
 Contact
 Cramer
+Conditioning
+Conditioned
 Organazation
 OSTEP
 Operating
@@ -22488,6 +22495,7 @@ DGFH
 DxS
 DWOX
 Digamma
+DROID
 The
 Team
 TVM
@@ -40498,6 +40506,7 @@ Ibi
 Ifractur
 INX
 Injection
+IRASim
 And
 Algorithm
 Analysis
@@ -53964,6 +53973,8 @@ prod
 planner
 pink
 pinching
+poses
+paraphrase
 Understanding
 USTC
 Unix
@@ -62532,6 +62543,7 @@ LKMQ
 LWay
 LiJs
 Lagrangian
+LPIPS
 Kernel
 Kernal
 Keys
@@ -83984,6 +83996,7 @@ Pyt
 PICO
 ParticleFormer
 PhysWorld
+Panda
 games
 go
 google
@@ -88374,6 +88387,8 @@ greaterdot
 gCKZ
 grounding
 grab
+gripper
+glove
 MLsystem
 MLsys
 Mlsys
@@ -112309,6 +112324,8 @@ slip
 stiffness
 sensors
 single
+stride
+simulate
 endobj
 end
 endstream
@@ -113111,6 +113128,10 @@ error
 event
 estimation
 exploration
+effector
+epsilonxt
+external
+engine
 Bi
 Border
 BS
@@ -116274,6 +116295,7 @@ trajectories
 transfer
 tracking
 trace
+third
 Fullbanner
 Feedback
 False
@@ -117091,6 +117113,10 @@ FPS
 FoundationPose
 Fisher
 Friction
+Frame
+Franka
+FID
+FVD
 is
 id
 identifier
@@ -118698,6 +118724,7 @@ VBench
 VAE
 Veo
 VLM
+View
 kpathsea
 kim
 ks
@@ -119492,6 +119519,7 @@ kappa
 kZf
 kfjT
 kQs
+kinematics
 version
 visionlanguageactionmodelopenworld
 visionlanguageactionflowmodel
@@ -120203,6 +120231,7 @@ video
 videos
 velocity
 view
+views
 Enhancing
 ExtGState
 Encoding
@@ -123397,6 +123426,7 @@ brush
 banana
 block
 behaviors
+box
 meta
 mq
 miller
@@ -124231,6 +124261,7 @@ mode
 mass
 motion
 metric
+memory
 rdf
 rights
 rt
@@ -125067,6 +125098,9 @@ randomization
 representation
 robotics
 rubbing
+roll
+retrieval
+rotate
 RDF
 Resources
 Rect
@@ -125958,6 +125992,8 @@ Randomization
 RealSense
 Reading
 Rao
+Retrieval
+Robotiq
 dc
 default
 dC
@@ -128315,6 +128351,8 @@ handover
 hallucination
 hybrid
 hefting
+hallucinate
+height
 yk
 yl
 yH
@@ -129824,6 +129862,7 @@ WIr
 WAN
 Warmup
 Weight
+WPE
 Q`
 QL
 Qp
