@@ -662,13 +662,13 @@ rollout 误差会累积。
 
 关系如下：
 
-|方法|核心|
-|---|---|
-|Dreamer|latent world model|
-|ParticleFormer|point cloud world model|
-|PhysWorld|physics world model|
-|DreamDojo|video world model|
-|Contact-Aware Dynamics|tactile world model|
+| 方法                     | 核心                      |
+| ---------------------- | ----------------------- |
+| Dreamer                | latent world model      |
+| ParticleFormer         | point cloud world model |
+| PhysWorld              | physics world model     |
+| DreamDojo              | video world model       |
+| Contact-Aware Dynamics | tactile world model     |
 
 关键区别：
 
