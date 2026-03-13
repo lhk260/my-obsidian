@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "learn from error",
+      "path": "paper/learn from error.md"
+    },
+    {
       "basename": "contact_aware_neural_dynamics",
       "path": "paper/contact_aware_neural_dynamics.md"
     },
@@ -55,10 +59,6 @@
     {
       "basename": "evaluating",
       "path": "paper/evaluating.md"
-    },
-    {
-      "basename": "dreamdojo",
-      "path": "paper/dreamdojo.md"
     }
   ],
   "omittedPaths": [],
