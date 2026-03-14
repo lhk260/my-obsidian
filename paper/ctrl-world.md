@@ -1,75 +1,22 @@
-我给你**从研究动机 → 整体框架 → 模型结构 → 训练方法 → rollout流程 → 实验结果 → 方法意义 → 与 DreamDojo / Gemini / World Model 的关系**系统讲解这篇 **Ctrl-World**。  
-这篇论文是 **ICLR 2026**，核心思想：
+  
 
 > **用生成世界模型替代真实机器人实验，用 imagination rollout 来评估和改进机器人策略。**
 > 
 > ctrl-world
-
+![[ctrl-world.png]]
 ---
 
 # 一、Ctrl-World 想解决什么问题
 
-当前机器人领域有一个巨大瓶颈：
+ 评估策略非常贵, 慢
 
-### 1 评估策略非常贵
+有**世界模型**：
 
-例如一个 VLA policy：
-
-at:t+H=π(ot,l)a_{t:t+H} = \pi(o_t, l)at:t+H​=π(ot​,l)
-
-要测试它是否好：
-
-- 必须 **真实机器人 rollout**
-    
-- 不同任务重复多次
-    
-- 每次都要人工标注成功/失败
-    
-
-非常慢。
-
-ctrl-world
-
----
-
-### 2 改进策略也很贵
-
-如果策略失败：
-
-唯一办法：
-
-收集更多真人演示  
-重新训练
-
-但真实数据成本高。
-
----
-
-### 3 论文核心想法
-
-如果我们有一个**世界模型**：
-
-ot+1:t+H=W(ot,at+1:t+H)o_{t+1:t+H} = W(o_t, a_{t+1:t+H})ot+1:t+H​=W(ot​,at+1:t+H​)
-
-那么：
-
-机器人可以在 **想象世界中 roll out**
-
-policy → action  
+$$o_{t+1:t+H}=W(o_{t},a_{t+1:t+H})
+$$
+那么机器人可以在 **想象世界中 roll out**，policy → action  
 world model → next observation  
 policy → action  
-...
-
-完全不需要真实机器人。
-
-论文称之为：
-
-**policy-in-the-loop world model**
-
-ctrl-world
-
----
-
 # 二、Ctrl-World整体框架
 
 论文核心系统如下（论文 Figure1）：
@@ -97,11 +44,7 @@ W → next state
 W → next state
 
 生成：
-
-synthetic trajectory
-
-然后用于：
-
+synthetic trajectory然后用于：
 1️⃣ **policy evaluation**  
 2️⃣ **policy improvement**
 
@@ -110,183 +53,48 @@ synthetic trajectory
 # 三、问题：为什么之前world model不行
 
 之前方法的问题：
+单视角。
+没有精细action控制
 
-### 1 单视角
+	很多 video model 只输入：text  image
+	而机器人需要：每个时间步 action
+长时序不稳定
 
-很多方法只预测：
-
-third-person camera
-
-问题：
-
-机器人抓东西时：
-
-物体被手挡住
-
-模型就 hallucinate。
-
----
-
-### 2 没有精细action控制
-
-很多 video model 只输入：
-
-text  
-image
-
-而机器人需要：
-
-每个时间步 action
-
----
-
-### 3 长时序不稳定
-
-10秒以上就开始：
-
-- 物体漂移
-    
-- 手臂位置错误
     
 
 ---
 
-# 四、Ctrl-World 的三个核心创新
+# 四、Ctrl-World 核心贡献
 
-论文提出三个关键设计：
+1. Multi-View Joint Prediction
 
-ctrl-world
-
----
-
-# 1 Multi-View Joint Prediction
-
-输入多相机：
-
-3 cameras
-
-例如：
-
-Cam1  third-person  
-Cam2  third-person  
-Cam3  wrist camera
-
-模型同时预测所有视角。
+	输入多相机：3 cameras
+	模型同时预测所有视角。
 
 论文做法：
-
 把所有图像token拼接：
-
 tokens = concat(view1_tokens, view2_tokens, view3_tokens)
-
 Transformer同时建模。
 
-好处：
-
-### (1) 减少遮挡
-
-wrist camera 可以看到：
-
-gripper contact
-
----
-
-### (2) 保证多视角一致
-
-否则会出现：
-
-view1: 抓到  
-view2: 没抓
-
----
-
-# 2 Frame-level Action Conditioning
-
-关键问题：
-
-video diffusion model 默认只条件：
-
-text  
-image
-
-机器人必须：
-
-每个时间步 action
-
-论文做法：
-
+好处： (1) 减少遮挡，保证多视角一致
+2. Frame-level Action Conditioning
 对每个frame加入action embedding：
-
-[at+1′,...,at+H′][a'_{t+1},...,a'_{t+H}][at+1′​,...,at+H′​]
-
+$$
+[a'_{t+1},...,a'_{t+H}]
+$$
 并通过 **frame-wise cross attention** 注入。
-
 结构：
-
 visual tokens  ← cross attention → pose embedding
-
 其中 pose 来自：
-
 action → forward kinematics → end-effector pose
-
 这样每一帧都对应：
-
 robot pose
-
----
-
-# 3 Pose-Conditioned Memory Retrieval
+3. Pose-Conditioned Memory Retrieval
 
 长序列会 drift。
 
-论文加入：
-
-**memory retrieval**
-
-输入不只是当前帧：
-
-history frames
-
-例如：
-
-o_t  
-o_{t-1}  
-o_{t-2}  
-o_{t-3}
-
-但不是连续，而是：
-
-stride sampling
-
-例如：
-
-o_{t-6}, o_{t-4}, o_{t-2}, o_t
-
-这样：
-
-context 不会太长。
-
----
-
-同时加入：
-
-pose embedding
-
-用于检索类似状态。
-
-效果：
-
-如果当前 pose 接近：
-
-t=0
-
-模型会 attend 到：
-
-t=0 frame
-
-论文中 attention 可视化证明这一点。
-
-ctrl-world
+论文加入：**memory retrieval**输入不只是当前帧：history frames, 用stride sampling $o_{t-6}, o_{t-4}, o_{t-2}, o_t$
+context 不会太长,同时加入：pose embedding用于检索类似状态。当前 pose 接近：t=0模型会 attend 到：t=0 frame
 
 ---
 
@@ -358,11 +166,7 @@ c = [
 
 # 七、Policy-in-the-loop rollout
 
-论文核心算法（Algorithm 1）：
-
-步骤：
-
-### Step1 初始化
+论文核心算法（Algorithm 1）：![[ctrl-world-1.png]]### Step1 初始化
 
 τ = [o0]
 

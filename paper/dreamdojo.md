@@ -404,13 +404,3 @@ DreamDojo 本身不是 policy，而是：
 
 ---
 
-## 18. 适合汇报时的简短总结
-
-可以直接这样说：
-
-> DreamDojo 提出了一种从大规模人类第一视角视频预训练机器人 world model 的方法。为了解决人类视频没有动作标签的问题，作者引入了连续 latent actions 作为统一 proxy action；在此基础上，结合 relative actions、chunked action injection 和 temporal consistency loss，提升动作可控视频预测质量；最后再通过 distillation，把 teacher 蒸馏成可实时 rollout 的 autoregressive student。实验表明该方法在 OOD 物体、场景和 counterfactual 动作上都优于基线，并能支持 policy evaluation、model-based planning 和 live teleoperation。
-
----
-
-如果你想，我可以继续把这份阅读笔记整理成更像课程汇报的版本，比如：  
-**摘要 + 方法图 + 实验结论 + 个人思考** 的四页式笔记。
