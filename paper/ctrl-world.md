@@ -143,20 +143,18 @@ ctrl-world
 x0=ot+1:t+Hx_0 = o_{t+1:t+H}x0​=ot+1:t+H​
 
 diffusion training：
-
+$$
 xt′=αt′x0+1−αt′ϵx_{t'} = \sqrt{\alpha_{t'}}x_0 + \sqrt{1-\alpha_{t'}}\epsilonxt′​=αt′​​x0​+1−αt′​​ϵ
-
+$$
 模型学习：
-
+$$
 x^0=f(xt′,t′,c)\hat x_0 = f(x_{t'},t',c)x^0​=f(xt′​,t′,c)
-
+$$
 loss：
-
-L=∣∣x^0−x0∣∣2L = ||\hat x_0 - x_0||^2L=∣∣x^0​−x0​∣∣2
-
-其中条件：
-
-c = [  
+$$
+L = ||\hat x_0 - x_0||^2
+$$
+其中条件：c = [  
  history frames  
  robot poses  
  action chunk  
@@ -403,75 +401,6 @@ policy ↔ world model
 
 ---
 
-# 十三、和 Dreamer / world model 的关系
 
-经典 world model：
 
-state space
 
-例如：
-
-Dreamer
-
-Ctrl-World：
-
-video space
-
-也就是：
-
-**pixel world model**
-
----
-
-# 十四、这篇论文最大的技术贡献
-
-总结三个：
-
-### 1 controllable video world model
-
-支持：
-
-action → video dynamics
-
----
-
-### 2 multi-view simulation
-
-支持：
-
-wrist camera
-
-这是 manipulation 非常关键的。
-
----
-
-### 3 policy evaluation & improvement
-
-可以：
-
-simulate → filter → train
-
----
-
-# 十五、一个非常重要的理解
-
-Ctrl-World本质是在做：
-
-robotics version of game engine
-
-只是：
-
-learned simulator
-
-而不是：
-
-physics engine
-
----
-
-如果你愿意，我可以再给你讲 **一个更深的部分**（很多人没看懂）：
-
-1️⃣ **Ctrl-World 的 diffusion transformer 具体结构**  
-2️⃣ **frame-level action conditioning 数学实现**  
-3️⃣ **为什么 multi-view 能减少 hallucination**  
-4️⃣ **为什么 DreamDojo 和 Ctrl-World 本质完全不同**（这个其实非常关键）
