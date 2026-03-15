@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "contact_aware_neural_dynamics",
+      "path": "paper/contact_aware_neural_dynamics.md"
+    },
+    {
       "basename": "learn from error",
       "path": "paper/learn from error.md"
     },
@@ -19,10 +23,6 @@
     {
       "basename": "dreamdojo",
       "path": "paper/dreamdojo.md"
-    },
-    {
-      "basename": "contact_aware_neural_dynamics",
-      "path": "paper/contact_aware_neural_dynamics.md"
     },
     {
       "basename": "behavior synthesis",
