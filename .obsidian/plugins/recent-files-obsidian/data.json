@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "learn from error",
+      "path": "paper/learn from error.md"
+    },
+    {
       "basename": "ctrl-world",
       "path": "paper/ctrl-world.md"
     },
@@ -11,10 +15,6 @@
     {
       "basename": "Ctrl-world",
       "path": "paper_note/worldmodel_for_robot/Ctrl-world.md"
-    },
-    {
-      "basename": "learn from error",
-      "path": "paper/learn from error.md"
     },
     {
       "basename": "dreamdojo",
