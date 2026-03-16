@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "lec3 图像处理",
+      "path": "lecture/computer vision in tsinghua/lec3 图像处理.md"
+    },
+    {
+      "basename": "computer vision in tsinghua",
+      "path": "lecture/computer vision in tsinghua/computer vision in tsinghua.md"
+    },
+    {
+      "basename": "lecture",
+      "path": "lecture/lecture.md"
+    },
+    {
       "basename": "contact_aware_neural_dynamics",
       "path": "paper/contact_aware_neural_dynamics.md"
     },
@@ -47,18 +59,6 @@
     {
       "basename": "TLA",
       "path": "paper/TLA.md"
-    },
-    {
-      "basename": "Tactile-VLA",
-      "path": "paper/Tactile-VLA.md"
-    },
-    {
-      "basename": "rise",
-      "path": "paper/rise.md"
-    },
-    {
-      "basename": "RDP",
-      "path": "paper/RDP.md"
     }
   ],
   "omittedPaths": [],
