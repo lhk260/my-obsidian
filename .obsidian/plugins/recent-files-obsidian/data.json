@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "flow_intro",
+      "path": "bricks/generation_model/flow/flow_intro.md"
+    },
+    {
+      "basename": "flow",
+      "path": "bricks/generation_model/flow/flow.md"
+    },
+    {
+      "basename": "gan_intro",
+      "path": "bricks/generation_model/gan/gan_intro.md"
+    },
+    {
+      "basename": "generation_model",
+      "path": "bricks/generation_model/generation_model.md"
+    },
+    {
+      "basename": "neural_network",
+      "path": "bricks/neural_network/neural_network.md"
+    },
+    {
+      "basename": "diffusion",
+      "path": "bricks/generation_model/diffusion/diffusion.md"
+    },
+    {
       "basename": "lec3 图像处理",
       "path": "lecture/computer vision in tsinghua/lec3 图像处理.md"
     },
@@ -35,30 +59,6 @@
     {
       "basename": "dreamdojo",
       "path": "paper/dreamdojo.md"
-    },
-    {
-      "basename": "behavior synthesis",
-      "path": "paper/behavior synthesis.md"
-    },
-    {
-      "basename": "evaluating",
-      "path": "paper/evaluating.md"
-    },
-    {
-      "basename": "self-forcing",
-      "path": "paper/self-forcing.md"
-    },
-    {
-      "basename": "prepare meeting with Jungong Han",
-      "path": "prepare meeting with Jungong Han.md"
-    },
-    {
-      "basename": "UniVTAC",
-      "path": "paper/UniVTAC.md"
-    },
-    {
-      "basename": "TLA",
-      "path": "paper/TLA.md"
     }
   ],
   "omittedPaths": [],
