@@ -1,5 +1,5 @@
 {
-  "folder": "diary/daily",
+  "folder": "10-Daily/daily",
   "format": "YYYY-MM-DD",
-  "template": "zob_config/template/daily"
+  "template": "90-System/Templates/daily"
 }

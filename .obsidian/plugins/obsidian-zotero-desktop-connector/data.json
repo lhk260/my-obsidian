@@ -1,12 +1,22 @@
 {
-  "database": "Zotero",
-  "noteImportFolder": "paper_note",
-  "pdfExportImageDPI": 120,
-  "pdfExportImageFormat": "jpg",
-  "pdfExportImageQuality": 90,
-  "citeFormats": [],
-  "exportFormats": [],
-  "citeSuggestTemplate": "[[{{citekey}}]]",
-  "openNoteAfterImport": false,
-  "whichNotesToOpenAfterImport": "first-imported-note"
+    "database":  "Zotero",
+    "noteImportFolder":  "20-Literature/Notes",
+    "pdfExportImageDPI":  120,
+    "pdfExportImageFormat":  "jpg",
+    "pdfExportImageQuality":  90,
+    "citeFormats":  [
+
+                    ],
+    "exportFormats":  [
+                          {
+                              "name":  "论文精读",
+                              "outputPathTemplate":  "20-Literature/Notes/{{citekey}}.md",
+                              "imageOutputPathTemplate":  "90-System/Attachments/Zotero/{{citekey}}",
+                              "imageBaseNameTemplate":  "image-{{annotationIndex}}",
+                              "templatePath":  "90-System/Templates/Zotero Literature Note.md"
+                          }
+                      ],
+    "citeSuggestTemplate":  "[[{{citekey}}]]",
+    "openNoteAfterImport":  true,
+    "whichNotesToOpenAfterImport":  "first-imported-note"
 }

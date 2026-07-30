@@ -1,0 +1,3 @@
+Pre-migration backup: D:\note\my-obsidian-migration-backup-20260730-150325
+Safety branch: codex/obsidian-learning-pipeline-20260730
+The later backup folders were created by idempotent continuation runs.

@@ -4,14 +4,14 @@
   "hasMigratedWeeklyNoteSettings": true,
   "daily": {
     "format": "YYYY-MM-DD",
-    "folder": "diary/daily",
-    "template": "zob_config/template/daily.md",
+    "folder": "10-Daily/daily",
+    "template": "90-System/Templates/daily.md",
     "enabled": true
   },
   "weekly": {
     "format": "gggg-[W]ww-MM",
-    "folder": "diary/weekly",
-    "template": "zob_config/template/weekly.md",
+    "folder": "10-Daily/weekly",
+    "template": "90-System/Templates/weekly.md",
     "enabled": true
   },
   "monthly": {

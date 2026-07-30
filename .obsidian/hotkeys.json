@@ -199,7 +199,7 @@
     }
   ],
   "file-explorer:new-file": [],
-  "templater-obsidian:zob_config/template/update_template.md": [
+  "templater-obsidian:90-System/Templates/update_template.md": [
     {
       "modifiers": [
         "Mod"
@@ -216,7 +216,7 @@
       "key": "N"
     }
   ],
-  "templater-obsidian:create-zob_config/template/template.md": [
+  "templater-obsidian:create-90-System/Templates/template.md": [
     {
       "modifiers": [
         "Mod"
@@ -224,7 +224,7 @@
       "key": "N"
     }
   ],
-  "templater-obsidian:zob_config/template/insert_clock.md": [
+  "templater-obsidian:90-System/Templates/insert_clock.md": [
     {
       "modifiers": [
         "Mod",
@@ -233,7 +233,7 @@
       "key": "Q"
     }
   ],
-  "templater-obsidian:zob_config/template/template.md": [
+  "templater-obsidian:90-System/Templates/template.md": [
     {
       "modifiers": [
         "Alt",
@@ -242,7 +242,7 @@
       "key": "N"
     }
   ],
-  "templater-obsidian:create-zob_config/template/article.md": [
+  "templater-obsidian:create-90-System/Templates/article.md": [
     {
       "modifiers": [
         "Alt",

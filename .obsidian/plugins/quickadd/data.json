@@ -13,7 +13,7 @@
             "name": "new daily dairy",
             "type": "UserScript",
             "id": "473d683a-7600-46ce-ab2c-15385313bdfd",
-            "path": "zob_config/js/new daily dairy.js",
+            "path": "90-System/Scripts/new daily dairy.js",
             "settings": {}
           }
         ]
@@ -25,7 +25,7 @@
   "persistInputPromptDrafts": true,
   "useSelectionAsCaptureValue": true,
   "devMode": false,
-  "templateFolderPath": "zob_config/template",
+  "templateFolderPath": "90-System/Templates",
   "announceUpdates": "all",
   "version": "2.12.0",
   "globalVariables": {},
@@ -124,7 +124,7 @@
           "name": "new daily dairy",
           "type": "UserScript",
           "id": "473d683a-7600-46ce-ab2c-15385313bdfd",
-          "path": "zob_config/js/new daily dairy.js",
+          "path": "90-System/Scripts/new daily dairy.js",
           "settings": {}
         }
       ],

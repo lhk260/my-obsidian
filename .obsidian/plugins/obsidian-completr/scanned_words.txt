@@ -4915,6 +4915,8 @@ ciw
 cxdQ
 clG
 chunking
+citekey
+clasify
 Computer
 Concepts
 ChatGpt
@@ -9536,6 +9538,9 @@ CzzMi
 CIT
 CxPy
 CLxH
+CouputingTheGradient
+Calibrating
+CxWxH
 Organazation
 OSTEP
 Operating
@@ -13778,6 +13783,7 @@ OOYz
 Ova
 Osl
 OmzJ
+Once
 and
 all
 amp
@@ -31643,6 +31649,7 @@ HAc
 HZXR
 Hzvb
 HvQb
+Home
 Software
 Structure
 System
@@ -36481,6 +36488,9 @@ SKs
 SFrQ
 SSf
 SYp
+SVMtmax
+Shoot
+Spaced
 Interface
 Isomorphic
 Inference
@@ -40842,6 +40852,8 @@ IDATi
 IqmF
 Itu
 IhZV
+Import
+Inbox
 And
 Algorithm
 Analysis
@@ -75955,6 +75967,7 @@ nuf
 nAHW
 nHT
 nnnpw
+nails
 Network
 Nvidia
 NCNN
@@ -93664,6 +93677,8 @@ MmZzZBFJjanJQN
 MOMb
 MGSQ
 MJtY
+MatrixMultiplyGradient
+MomentumUpdate
 JYY
 Jim
 Jina
@@ -106721,6 +106736,7 @@ lcIQn
 lsy
 lRYQ
 logp
+linalg
 GPU
 GPT
 Google
@@ -113378,6 +113394,14 @@ sEbl
 sHJ
 sxI
 skills
+synthesis
+suggestion
+scaling
+segmentation
+sliding
+strided
+spatial
+symmetry
 endobj
 end
 endstream
@@ -114268,6 +114292,9 @@ eIDATx
 ecP
 expensive
 environment
+each
+ensures
+empirically
 Bi
 Border
 BS
@@ -115071,6 +115098,7 @@ Blr
 BBY
 BHt
 B`bx
+BatchNormalization
 Yuchen
 Yp
 YC
@@ -115924,6 +115952,7 @@ YTh
 YkE
 YHH
 YwY
+YOLO
 Zheng
 ZI
 ZC
@@ -116856,6 +116885,7 @@ ZKx
 ZjJ
 ZrE
 Zal
+Zotero
 tex
 title
 tame
@@ -117742,6 +117772,11 @@ tYK
 tjO
 tracker
 tutprial
+topics
+that
+turns
+transpose
+trick
 Fullbanner
 Feedback
 False
@@ -118646,6 +118681,10 @@ FBZ
 FQxd
 FUlQU
 FgD
+Fully
+Fast
+Faster
+Final
 is
 id
 identifier
@@ -119539,6 +119578,13 @@ iEWj
 icd
 iQX
 intro
+initialized
+inputs
+its
+initialize
+initially
+improves
+increase
 Version
 VLA
 Vision
@@ -122083,6 +122129,10 @@ vUP
 vAh
 vxpXWU
 vpG
+venue
+variances
+variance
+vector
 Enhancing
 ExtGState
 Encoding
@@ -122989,6 +123039,9 @@ EDD
 Ebh
 EPH
 ET`
+Experiment
+Embodied
+Euclidean
 XML
 XIEHRG
 XK
@@ -123835,6 +123888,7 @@ XstQ
 XSg
 Xwi
 XPQ
+Xrot
 xpacket
 xmpmeta
 xmlns
@@ -125619,6 +125673,8 @@ bmyB
 bWg
 biD
 best
+bed
+bounding
 meta
 mq
 miller
@@ -126538,6 +126594,10 @@ mÜ
 mSj
 muW
 mTj
+modified
+maxpooling
+max
+magic
 rdf
 rights
 rt
@@ -127459,6 +127519,14 @@ rXu
 rKQ
 rOT
 rnLe
+review
+randomly
+root
+recommended
+resolution
+region
+regress
+related
 RDF
 Resources
 Rect
@@ -128426,6 +128494,9 @@ RHH
 RD`
 Rzu
 RcC
+Research
+RPN
+Repetition
 dc
 default
 dC
@@ -129323,6 +129394,10 @@ dPq
 dBa
 dreamdojo
 datasets
+doi
+duplicate
+deconvolution
+dark
 funk
 foarforceawarereactivepolicy
 fitz
@@ -130203,6 +130278,7 @@ fMw
 fZe
 fTU
 futures
+fan
 he
 hZ
 human
@@ -131053,6 +131129,10 @@ hDG
 hmIu
 hjI
 hours
+heuristic
+have
+how
+home
 yk
 yl
 yH
