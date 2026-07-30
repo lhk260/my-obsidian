@@ -1,16 +1,56 @@
 {
   "recentFiles": [
     {
-      "basename": "Literature Dashboard",
-      "path": "20-Literature/Literature Dashboard.md"
+      "basename": "yuanFastWAMWorldAction2026",
+      "path": "20-Literature/Sources/yuanFastWAMWorldAction2026.md"
+    },
+    {
+      "basename": "Home",
+      "path": "Home.md"
+    },
+    {
+      "basename": "00-Inbox",
+      "path": "00-Inbox/00-Inbox.md"
+    },
+    {
+      "basename": "未命名",
+      "path": "00-Inbox/未命名/未命名.md"
+    },
+    {
+      "basename": "WAM4D 三层笔记操作演示",
+      "path": "20-Literature/Reading-Queue/WAM4D 三层笔记操作演示.md"
+    },
+    {
+      "basename": "li2026wam4d",
+      "path": "20-Literature/Sources/li2026wam4d.md"
+    },
+    {
+      "basename": "Reading-Queue",
+      "path": "20-Literature/Reading-Queue/Reading-Queue.md"
+    },
+    {
+      "basename": "li2026wam4d",
+      "path": "20-Literature/PDFs/li2026wam4d.pdf"
+    },
+    {
+      "basename": "li2026wam4d.my.demo",
+      "path": "20-Literature/My-Notes/li2026wam4d.my.demo.md"
+    },
+    {
+      "basename": "li2026wam4d.ai",
+      "path": "20-Literature/AI-Explanations/li2026wam4d.ai.md"
+    },
+    {
+      "basename": "Legacy-Notes",
+      "path": "20-Literature/Legacy-Notes/Legacy-Notes.md"
     },
     {
       "basename": "20-Literature",
       "path": "20-Literature/20-Literature.md"
     },
     {
-      "basename": "Legacy-Notes",
-      "path": "20-Literature/Legacy-Notes/Legacy-Notes.md"
+      "basename": "Literature Dashboard",
+      "path": "20-Literature/Literature Dashboard.md"
     },
     {
       "basename": "OneLLM-One Framework to Align All Modalities with Language",
@@ -19,46 +59,6 @@
     {
       "basename": "HybridFlow- A Flexible and Efficient RLHF Framework",
       "path": "20-Literature/Legacy-Notes/HybridFlow- A Flexible and Efficient RLHF Framework.md"
-    },
-    {
-      "basename": "worldmodel_for_robot",
-      "path": "20-Literature/Legacy-Notes/worldmodel_for_robot/worldmodel_for_robot.md"
-    },
-    {
-      "basename": "robodream",
-      "path": "20-Literature/Legacy-Notes/worldmodel_for_robot/robodream.md"
-    },
-    {
-      "basename": "dreamdojo",
-      "path": "20-Literature/Legacy-Notes/worldmodel_for_robot/dreamdojo.md"
-    },
-    {
-      "basename": "Ctrl-world",
-      "path": "20-Literature/Legacy-Notes/worldmodel_for_robot/Ctrl-world.md"
-    },
-    {
-      "basename": "论文与学习工作流",
-      "path": "90-System/Guides/论文与学习工作流.md"
-    },
-    {
-      "basename": "50-Projects",
-      "path": "50-Projects/50-Projects.md"
-    },
-    {
-      "basename": "My Paper Note",
-      "path": "90-System/Templates/My Paper Note.md"
-    },
-    {
-      "basename": "insert_clock",
-      "path": "90-System/Templates/insert_clock.md"
-    },
-    {
-      "basename": "Flashcards",
-      "path": "90-System/Templates/Flashcards.md"
-    },
-    {
-      "basename": "daily",
-      "path": "90-System/Templates/daily.md"
     }
   ],
   "omittedPaths": [],
