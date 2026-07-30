@@ -36911,6 +36911,7 @@ SVxrk
 Suo
 SNS
 Stapler
+Seen
 Interface
 Isomorphic
 Inference
@@ -41327,6 +41328,7 @@ IMmJE
 ICG
 IevR
 Imagination
+Imagine
 And
 Algorithm
 Analysis
@@ -115814,6 +115816,7 @@ encode
 encoding
 effect
 energy
+execution
 Bi
 Border
 BS
@@ -120810,6 +120813,10 @@ Fam
 FontFamily
 FontStretch
 FQfr
+FFN
+FLOPs
+Faucet
+Failure
 is
 id
 identifier
@@ -121851,6 +121858,8 @@ iterative
 instantiate
 initialization
 interval
+iteration
+invert
 Version
 VLA
 Vision
@@ -128825,6 +128834,7 @@ bPz
 benefit
 but
 both
+binarization
 meta
 mq
 miller
@@ -129886,6 +129896,7 @@ mixed
 modulation
 manifold
 mostly
+modal
 rdf
 rights
 rt
@@ -132065,6 +132076,7 @@ Rnq
 RqZK
 REVAMP
 RoboCasa
+Recovery
 dc
 default
 dC
@@ -133077,6 +133089,8 @@ direct
 decay
 demonstration
 deformation
+decode
+discrimination
 funk
 foarforceawarereactivepolicy
 fitz
@@ -134099,6 +134113,7 @@ faster
 foresight
 family
 faucet
+frequency
 he
 hZ
 human
