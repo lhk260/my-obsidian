@@ -1,20 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "yuanFastWAMWorldAction2026",
-      "path": "20-Literature/Sources/yuanFastWAMWorldAction2026.md"
+      "basename": "10-Daily",
+      "path": "10-Daily/10-Daily.md"
     },
     {
-      "basename": "Home",
-      "path": "Home.md"
+      "basename": "daily",
+      "path": "10-Daily/daily/daily.md"
+    },
+    {
+      "basename": "未命名",
+      "path": "00-Inbox/未命名/未命名.md"
     },
     {
       "basename": "00-Inbox",
       "path": "00-Inbox/00-Inbox.md"
     },
     {
-      "basename": "未命名",
-      "path": "00-Inbox/未命名/未命名.md"
+      "basename": "Home",
+      "path": "Home.md"
+    },
+    {
+      "basename": "yuanFastWAMWorldAction2026",
+      "path": "20-Literature/Sources/yuanFastWAMWorldAction2026.md"
     },
     {
       "basename": "WAM4D 三层笔记操作演示",
@@ -51,14 +59,6 @@
     {
       "basename": "Literature Dashboard",
       "path": "20-Literature/Literature Dashboard.md"
-    },
-    {
-      "basename": "OneLLM-One Framework to Align All Modalities with Language",
-      "path": "20-Literature/Legacy-Notes/OneLLM-One Framework to Align All Modalities with Language.md"
-    },
-    {
-      "basename": "HybridFlow- A Flexible and Efficient RLHF Framework",
-      "path": "20-Literature/Legacy-Notes/HybridFlow- A Flexible and Efficient RLHF Framework.md"
     }
   ],
   "omittedPaths": [],
