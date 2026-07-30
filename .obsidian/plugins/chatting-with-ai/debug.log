@@ -1,0 +1,18 @@
+
+--- USER_MESSAGE [2026-07-30T10:34:40.732Z] ---
+{
+  "userMessage": "hello",
+  "hasSelection": false
+}
+
+--- API_RESPONSE [2026-07-30T10:34:44.967Z] ---
+{
+  "stopReason": "end_turn",
+  "contentTypes": [
+    "text"
+  ],
+  "usage": {
+    "inputTokens": 4198,
+    "outputTokens": 20
+  }
+}

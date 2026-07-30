@@ -1,6 +1,46 @@
 {
   "recentFiles": [
     {
+      "basename": "Paper AI Explanation Prompt",
+      "path": "90-System/Prompts/Paper AI Explanation Prompt.md"
+    },
+    {
+      "basename": "论文与学习工作流",
+      "path": "90-System/Guides/论文与学习工作流.md"
+    },
+    {
+      "basename": "ChatGPT Project Instructions",
+      "path": "90-System/Prompts/ChatGPT Project Instructions.md"
+    },
+    {
+      "basename": "Guides",
+      "path": "90-System/Guides/Guides.md"
+    },
+    {
+      "basename": "90-System",
+      "path": "90-System/90-System.md"
+    },
+    {
+      "basename": "Templates",
+      "path": "90-System/Templates/Templates.md"
+    },
+    {
+      "basename": "yuanFastWAMWorldAction2026",
+      "path": "20-Literature/Sources/yuanFastWAMWorldAction2026.md"
+    },
+    {
+      "basename": "Paper Verification Prompt",
+      "path": "90-System/Prompts/Paper Verification Prompt.md"
+    },
+    {
+      "basename": "Literature Dashboard",
+      "path": "20-Literature/Literature Dashboard.md"
+    },
+    {
+      "basename": "20-Literature",
+      "path": "20-Literature/20-Literature.md"
+    },
+    {
       "basename": "10-Daily",
       "path": "10-Daily/10-Daily.md"
     },
@@ -19,46 +59,6 @@
     {
       "basename": "Home",
       "path": "Home.md"
-    },
-    {
-      "basename": "yuanFastWAMWorldAction2026",
-      "path": "20-Literature/Sources/yuanFastWAMWorldAction2026.md"
-    },
-    {
-      "basename": "WAM4D 三层笔记操作演示",
-      "path": "20-Literature/Reading-Queue/WAM4D 三层笔记操作演示.md"
-    },
-    {
-      "basename": "li2026wam4d",
-      "path": "20-Literature/Sources/li2026wam4d.md"
-    },
-    {
-      "basename": "Reading-Queue",
-      "path": "20-Literature/Reading-Queue/Reading-Queue.md"
-    },
-    {
-      "basename": "li2026wam4d",
-      "path": "20-Literature/PDFs/li2026wam4d.pdf"
-    },
-    {
-      "basename": "li2026wam4d.my.demo",
-      "path": "20-Literature/My-Notes/li2026wam4d.my.demo.md"
-    },
-    {
-      "basename": "li2026wam4d.ai",
-      "path": "20-Literature/AI-Explanations/li2026wam4d.ai.md"
-    },
-    {
-      "basename": "Legacy-Notes",
-      "path": "20-Literature/Legacy-Notes/Legacy-Notes.md"
-    },
-    {
-      "basename": "20-Literature",
-      "path": "20-Literature/20-Literature.md"
-    },
-    {
-      "basename": "Literature Dashboard",
-      "path": "20-Literature/Literature Dashboard.md"
     }
   ],
   "omittedPaths": [],
