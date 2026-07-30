@@ -160,13 +160,13 @@ $$
 
 动作预测的关键可见性：
 
-| Query | 可见 Key/Value |
-|---|---|
+| Query               | 可见 Key/Value                                     |
+| ------------------- | ------------------------------------------------ |
 | Future action noise | history video、history action、future action noise |
-| Register | register、history video |
-| Future video noise | history video、future video noise |
-| History video | history video |
-| History action | history action |
+| Register            | register、history video                           |
+| Future video noise  | history video、future video noise                 |
+| History video       | history video                                    |
+| History action      | history action                                   |
 
 最关键的隔离是：
 
