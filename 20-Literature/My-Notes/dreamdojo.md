@@ -1,5 +1,5 @@
 ---
-type: paper
+type: my-paper-note
 title: "dreamdojo"
 status: processed
 authors: []
@@ -13,8 +13,16 @@ tags:
 review: false
 created: 2026-03-08
 modified: 2026-07-30
+source:
+ai_explanation:
+summary_done: true
+verified: false
+rating:
+projects: []
+legacy_import: true
+ai_explanation_done: false
 ---
-  
+
 论文：**DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos**
 
 ---

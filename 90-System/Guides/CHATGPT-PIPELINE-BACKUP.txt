@@ -1,0 +1,2 @@
+Pre-change backup: D:\note\my-obsidian-chatgpt-pipeline-backup-20260730-151942
+Vault branch: codex/obsidian-learning-pipeline-20260730

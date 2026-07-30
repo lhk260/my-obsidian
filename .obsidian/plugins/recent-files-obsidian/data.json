@@ -1,64 +1,64 @@
 {
   "recentFiles": [
     {
-      "basename": "80-Imports",
-      "path": "80-Imports/80-Imports.md"
+      "basename": "Literature Dashboard",
+      "path": "20-Literature/Literature Dashboard.md"
+    },
+    {
+      "basename": "20-Literature",
+      "path": "20-Literature/20-Literature.md"
+    },
+    {
+      "basename": "Legacy-Notes",
+      "path": "20-Literature/Legacy-Notes/Legacy-Notes.md"
+    },
+    {
+      "basename": "OneLLM-One Framework to Align All Modalities with Language",
+      "path": "20-Literature/Legacy-Notes/OneLLM-One Framework to Align All Modalities with Language.md"
+    },
+    {
+      "basename": "HybridFlow- A Flexible and Efficient RLHF Framework",
+      "path": "20-Literature/Legacy-Notes/HybridFlow- A Flexible and Efficient RLHF Framework.md"
+    },
+    {
+      "basename": "worldmodel_for_robot",
+      "path": "20-Literature/Legacy-Notes/worldmodel_for_robot/worldmodel_for_robot.md"
+    },
+    {
+      "basename": "robodream",
+      "path": "20-Literature/Legacy-Notes/worldmodel_for_robot/robodream.md"
+    },
+    {
+      "basename": "dreamdojo",
+      "path": "20-Literature/Legacy-Notes/worldmodel_for_robot/dreamdojo.md"
+    },
+    {
+      "basename": "Ctrl-world",
+      "path": "20-Literature/Legacy-Notes/worldmodel_for_robot/Ctrl-world.md"
     },
     {
       "basename": "论文与学习工作流",
       "path": "90-System/Guides/论文与学习工作流.md"
     },
     {
-      "basename": "Guides",
-      "path": "90-System/Guides/Guides.md"
+      "basename": "50-Projects",
+      "path": "50-Projects/50-Projects.md"
     },
     {
-      "basename": "Home",
-      "path": "Home.md"
+      "basename": "My Paper Note",
+      "path": "90-System/Templates/My Paper Note.md"
     },
     {
-      "basename": "DataStructureFunThing",
-      "path": "80-Imports/Notion/DataStructureFunThing/DataStructureFunThing.md"
+      "basename": "insert_clock",
+      "path": "90-System/Templates/insert_clock.md"
     },
     {
-      "basename": "CS231n fun thing",
-      "path": "80-Imports/Notion/CS231n fun thing/CS231n fun thing.md"
+      "basename": "Flashcards",
+      "path": "90-System/Templates/Flashcards.md"
     },
     {
-      "basename": "Notion",
-      "path": "80-Imports/Notion/Notion.md"
-    },
-    {
-      "basename": "Legacy-Assets",
-      "path": "90-System/Legacy-Assets/Legacy-Assets.md"
-    },
-    {
-      "basename": "90-System",
-      "path": "90-System/90-System.md"
-    },
-    {
-      "basename": "Attachments",
-      "path": "90-System/Attachments/Attachments.md"
-    },
-    {
-      "basename": "dreamdojo",
-      "path": "90-System/Attachments/dreamdojo.png"
-    },
-    {
-      "basename": "ctrl-world-1",
-      "path": "90-System/Attachments/ctrl-world-1.png"
-    },
-    {
-      "basename": "ctrl-world",
-      "path": "90-System/Attachments/ctrl-world.png"
-    },
-    {
-      "basename": "分割（segmentation）定位（localization）与识别（detection）",
-      "path": "80-Imports/Notion/CS231n fun thing/分割（segmentation）定位（localization）与识别（detection）.md"
-    },
-    {
-      "basename": "2026.3.8",
-      "path": "60-Outputs/2026.3.8.md"
+      "basename": "daily",
+      "path": "90-System/Templates/daily.md"
     }
   ],
   "omittedPaths": [],

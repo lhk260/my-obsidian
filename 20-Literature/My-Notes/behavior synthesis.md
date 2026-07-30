@@ -1,5 +1,5 @@
 ---
-type: paper
+type: my-paper-note
 title: "behavior synthesis"
 status: processed
 authors: []
@@ -13,7 +13,16 @@ tags:
 review: false
 created: 2026-03-10
 modified: 2026-07-30
+source:
+ai_explanation:
+summary_done: true
+verified: false
+rating:
+projects: []
+legacy_import: true
+ai_explanation_done: false
 ---
+
 下面是一份结构化 **论文阅读笔记（Reading Notes）**，适合放在 **Obsidian / Markdown / 论文笔记库** 中。内容包括：**问题 → 方法 → 数学模型 → 算法流程 → 实验 → 优缺点 → 启发**。
 
 论文：  

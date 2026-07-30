@@ -1,5 +1,5 @@
 ---
-type: paper
+type: my-paper-note
 title: "contact_aware_neural_dynamics"
 status: processed
 authors: []
@@ -13,7 +13,16 @@ tags:
 review: false
 created: 2026-03-09
 modified: 2026-07-30
+source:
+ai_explanation:
+summary_done: true
+verified: false
+rating:
+projects: []
+legacy_import: true
+ai_explanation_done: false
 ---
+
 下面是一份 **结构化阅读笔记（适合放进 Obsidian / Markdown / 论文笔记库）**，针对论文  
 **《Contact-Aware Neural Dynamics》**。我按照你常用的科研笔记结构整理：
 

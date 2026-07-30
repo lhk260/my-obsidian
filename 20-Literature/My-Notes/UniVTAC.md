@@ -1,5 +1,5 @@
 ---
-type: paper
+type: my-paper-note
 title: "UniVTAC"
 status: processed
 authors: []
@@ -13,7 +13,16 @@ tags:
 review: false
 created: 2026-03-09
 modified: 2026-07-30
+source:
+ai_explanation:
+summary_done: true
+verified: false
+rating:
+projects: []
+legacy_import: true
+ai_explanation_done: false
 ---
+
 ## 1. 这篇文章到底在做什么
 
 论文标题是 **“UniVTAC: A Unified Simulation Platform for Visuo-Tactile Manipulation Data Generation, Learning, and Benchmarking”**。  
