@@ -4980,6 +4980,7 @@ cJrm
 coSO
 competitive
 causes
+cosine
 Computer
 Concepts
 ChatGpt
@@ -18533,6 +18534,7 @@ aiJ
 ayuV
 a`z
 actually
+annealing
 Design
 Data
 Database
@@ -36908,6 +36910,7 @@ SznG
 SVxrk
 Suo
 SNS
+Stapler
 Interface
 Isomorphic
 Inference
@@ -45954,6 +45957,7 @@ AlRN
 AMjl
 AxM
 Annotations
+AUROC
 java
 jyy
 js
@@ -55096,6 +55100,9 @@ pKI
 promising
 primarily
 proposing
+proprioceptive
+proprio
+proprioception
 Understanding
 USTC
 Unix
@@ -63850,6 +63857,7 @@ LYwjZ
 LDuH
 LsR
 LIBERO
+Lite
 Kernel
 Kernal
 Keys
@@ -85759,6 +85767,8 @@ PJqj
 PmQL
 P`H
 PVu
+Proprioception
+Press
 games
 go
 google
@@ -90227,6 +90237,7 @@ gC`K
 gyjm
 gEF
 gow
+grounded
 MLsystem
 MLsys
 Mlsys
@@ -94767,6 +94778,8 @@ MKv
 MissingWidth
 MQCJo
 MQmc
+Motus
+Microwave
 JYY
 Jim
 Jina
@@ -103424,6 +103437,7 @@ wzXsA
 wNkOV
 wLqX
 wbq
+wrinkle
 lab
 lightning
 latex
@@ -107973,6 +107987,7 @@ lHaO
 lOEss
 lxZ
 lWm
+lifted
 GPU
 GPT
 Google
@@ -112178,6 +112193,7 @@ Gvg
 GfwZ
 GFpS
 GMD
+Goal
 spring
 system
 size
@@ -114791,6 +114807,8 @@ select
 substantial
 skips
 suggest
+scheduler
+seen
 endobj
 end
 endstream
@@ -115791,6 +115809,11 @@ evolve
 execute
 explicit
 enable
+ensemble
+encode
+encoding
+effect
+energy
 Bi
 Border
 BS
@@ -116708,6 +116731,7 @@ BYwTo
 BlB
 Bkk
 BURTPP
+Basket
 Yuchen
 Yp
 YC
@@ -119742,6 +119766,7 @@ then
 textbf
 these
 than
+tokenization
 Fullbanner
 Feedback
 False
@@ -121824,6 +121849,8 @@ imagine
 incurring
 iterative
 instantiate
+initialization
+interval
 Version
 VLA
 Vision
@@ -124758,6 +124785,7 @@ vcT
 vohZ
 vBMn
 variants
+variant
 Enhancing
 ExtGState
 Encoding
@@ -127755,6 +127783,7 @@ xmn
 xVB
 xVGJ
 xJS
+xrightarrow
 begin
 bp
 bk
@@ -129852,6 +129881,11 @@ may
 modeling
 much
 methods
+mathcal
+mixed
+modulation
+manifold
+mostly
 rdf
 rights
 rt
@@ -130931,6 +130965,9 @@ retains
 removing
 runs
 rather
+resize
+replan
+recovery
 RDF
 Resources
 Rect
@@ -132026,6 +132063,8 @@ REnw
 Ryt
 Rnq
 RqZK
+REVAMP
+RoboCasa
 dc
 default
 dC
@@ -133033,6 +133072,11 @@ dependency
 during
 disentangle
 drop
+dimension
+direct
+decay
+demonstration
+deformation
 funk
 foarforceawarereactivepolicy
 fitz
@@ -134052,6 +134096,9 @@ further
 factors
 find
 faster
+foresight
+family
+faucet
 he
 hZ
 human
@@ -135003,6 +135050,9 @@ hQG
 hJM
 hxX
 hoP
+hook
+heatmap
+happens
 yk
 yl
 yH
@@ -138861,6 +138911,7 @@ qpj
 qhf
 quwog
 qhGP
+qpos
 zo
 z`
 zRc
@@ -140746,6 +140797,7 @@ uIV
 uVv
 under
 unclear
+unseen
 ÖWk
 Öp
 Ör
