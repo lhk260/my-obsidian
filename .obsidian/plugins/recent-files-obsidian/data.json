@@ -5,6 +5,10 @@
       "path": "20-Literature/AI-Explanations/yuanFastWAMWorldAction2026.ai.md"
     },
     {
+      "basename": "未命名",
+      "path": "20-Literature/AI-Explanations/未命名.md"
+    },
+    {
       "basename": "li2026wam4d.ai",
       "path": "20-Literature/AI-Explanations/li2026wam4d.ai.md"
     },
@@ -55,10 +59,6 @@
     {
       "basename": "20-Literature",
       "path": "20-Literature/20-Literature.md"
-    },
-    {
-      "basename": "10-Daily",
-      "path": "10-Daily/10-Daily.md"
     }
   ],
   "omittedPaths": [],
