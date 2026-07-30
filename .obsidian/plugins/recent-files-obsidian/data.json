@@ -1,64 +1,64 @@
 {
   "recentFiles": [
     {
-      "basename": "flow_intro",
-      "path": "bricks/generation_model/flow/flow_intro.md"
+      "basename": "论文阅读方法",
+      "path": "paper_note/阅读方法/论文阅读方法.md"
     },
     {
-      "basename": "flow",
-      "path": "bricks/generation_model/flow/flow.md"
+      "basename": "dreamdojo",
+      "path": "paper_note/worldmodel_for_robot/dreamdojo.md"
     },
     {
-      "basename": "gan_intro",
-      "path": "bricks/generation_model/gan/gan_intro.md"
-    },
-    {
-      "basename": "generation_model",
-      "path": "bricks/generation_model/generation_model.md"
-    },
-    {
-      "basename": "neural_network",
-      "path": "bricks/neural_network/neural_network.md"
-    },
-    {
-      "basename": "diffusion",
-      "path": "bricks/generation_model/diffusion/diffusion.md"
-    },
-    {
-      "basename": "lec3 图像处理",
-      "path": "lecture/computer vision in tsinghua/lec3 图像处理.md"
-    },
-    {
-      "basename": "computer vision in tsinghua",
-      "path": "lecture/computer vision in tsinghua/computer vision in tsinghua.md"
-    },
-    {
-      "basename": "lecture",
-      "path": "lecture/lecture.md"
-    },
-    {
-      "basename": "contact_aware_neural_dynamics",
-      "path": "paper/contact_aware_neural_dynamics.md"
-    },
-    {
-      "basename": "learn from error",
-      "path": "paper/learn from error.md"
-    },
-    {
-      "basename": "ctrl-world",
-      "path": "paper/ctrl-world.md"
-    },
-    {
-      "basename": "worldmodel_for_robot",
-      "path": "paper_note/worldmodel_for_robot/worldmodel_for_robot.md"
+      "basename": "robodream",
+      "path": "paper_note/worldmodel_for_robot/robodream.md"
     },
     {
       "basename": "Ctrl-world",
       "path": "paper_note/worldmodel_for_robot/Ctrl-world.md"
     },
     {
+      "basename": "rise",
+      "path": "zob_source/images/rise.png"
+    },
+    {
+      "basename": "learn from error-8",
+      "path": "zob_source/images/learn from error-8.png"
+    },
+    {
+      "basename": "images",
+      "path": "zob_source/images/images.md"
+    },
+    {
+      "basename": "learn from error-2",
+      "path": "zob_source/images/learn from error-2.png"
+    },
+    {
+      "basename": "dreamdojo-3",
+      "path": "zob_source/images/dreamdojo-3.png"
+    },
+    {
+      "basename": "dreamdojo-1",
+      "path": "zob_source/images/dreamdojo-1.png"
+    },
+    {
       "basename": "dreamdojo",
-      "path": "paper/dreamdojo.md"
+      "path": "zob_source/images/dreamdojo.png"
+    },
+    {
+      "basename": "ctrl-world-1",
+      "path": "zob_source/images/ctrl-world-1.png"
+    },
+    {
+      "basename": "ctrl-world",
+      "path": "zob_source/images/ctrl-world.png"
+    },
+    {
+      "basename": "learn from error-7",
+      "path": "zob_source/images/learn from error-7.png"
+    },
+    {
+      "basename": "learn from error-3",
+      "path": "zob_source/images/learn from error-3.png"
     }
   ],
   "omittedPaths": [],
