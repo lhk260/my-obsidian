@@ -19,6 +19,26 @@
         ]
       },
       "runOnStartup": false
+    },
+    {
+      "id": "f71b23ce-4a5f-47d1-b24d-99aac31d53eb",
+      "name": "论文 → ChatGPT",
+      "type": "Macro",
+      "command": true,
+      "macro": {
+        "id": "0ed31ca4-9eac-43a6-a8b7-f6e257e29c1c",
+        "name": "论文 → ChatGPT",
+        "commands": [
+          {
+            "name": "paper_to_chatgpt",
+            "type": "UserScript",
+            "id": "f1f7b133-844a-4d83-96ea-45894b8377e0",
+            "path": "90-System/Scripts/paper_to_chatgpt.js",
+            "settings": {}
+          }
+        ]
+      },
+      "runOnStartup": false
     }
   ],
   "inputPrompt": "single-line",
@@ -125,6 +145,20 @@
           "type": "UserScript",
           "id": "473d683a-7600-46ce-ab2c-15385313bdfd",
           "path": "90-System/Scripts/new daily dairy.js",
+          "settings": {}
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "论文 → ChatGPT",
+      "id": "0ed31ca4-9eac-43a6-a8b7-f6e257e29c1c",
+      "commands": [
+        {
+          "name": "paper_to_chatgpt",
+          "type": "UserScript",
+          "id": "f1f7b133-844a-4d83-96ea-45894b8377e0",
+          "path": "90-System/Scripts/paper_to_chatgpt.js",
           "settings": {}
         }
       ],

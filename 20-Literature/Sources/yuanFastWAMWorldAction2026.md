@@ -48,7 +48,7 @@ World Action Models (WAMs) have emerged as a promising alternative to Vision-Lan
 
 ## Pipeline links
 
-- AI explanation:
-- My note:
+- AI explanation: [[yuanFastWAMWorldAction2026.ai]]
+- My note: [[yuanFastWAMWorldAction2026.my]]
 
 <!-- Source Note 只保存原始材料。不要在这里写长篇个人总结。 -->

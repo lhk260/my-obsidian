@@ -356,5 +356,14 @@
       ],
       "key": "'"
     }
+  ],
+  "quickadd:choice:f71b23ce-4a5f-47d1-b24d-99aac31d53eb": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "G"
+    }
   ]
 }
