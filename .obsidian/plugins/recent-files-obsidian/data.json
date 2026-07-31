@@ -1,16 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "li2026wam4d.ai",
-      "path": "20-Literature/AI-Explanations/li2026wam4d.ai.md"
+      "basename": "Legacy-Templates",
+      "path": "90-System/Legacy-Templates/Legacy-Templates.md"
+    },
+    {
+      "basename": "trex",
+      "path": "20-Literature/My-Notes/trex.md"
+    },
+    {
+      "basename": "Home",
+      "path": "Home.md"
+    },
+    {
+      "basename": "论文与学习工作流",
+      "path": "90-System/Guides/论文与学习工作流.md"
+    },
+    {
+      "basename": "li2026wam4d",
+      "path": "20-Literature/Sources/li2026wam4d.md"
+    },
+    {
+      "basename": "yuanFastWAMWorldAction2026",
+      "path": "20-Literature/Sources/yuanFastWAMWorldAction2026.md"
     },
     {
       "basename": "li2026wam4d",
       "path": "20-Literature/PDFs/li2026wam4d.pdf"
     },
     {
-      "basename": "Fast-WAM_论文讲解_紧凑规范版",
-      "path": "20-Literature/AI-Explanations/Fast-WAM_论文讲解_紧凑规范版.md"
+      "basename": "PDFs",
+      "path": "20-Literature/PDFs/PDFs.md"
+    },
+    {
+      "basename": "li2026wam4d.ai",
+      "path": "20-Literature/AI-Explanations/li2026wam4d.ai.md"
     },
     {
       "basename": "yuanFastWAMWorldAction2026.ai",
@@ -19,10 +43,6 @@
     {
       "basename": "一键论文讲解工作流",
       "path": "90-System/Guides/一键论文讲解工作流.md"
-    },
-    {
-      "basename": "论文与学习工作流",
-      "path": "90-System/Guides/论文与学习工作流.md"
     },
     {
       "basename": "Guides",
@@ -35,30 +55,6 @@
     {
       "basename": "rise",
       "path": "20-Literature/My-Notes/rise.md"
-    },
-    {
-      "basename": "li2026wam4d.my.demo",
-      "path": "20-Literature/My-Notes/li2026wam4d.my.demo.md"
-    },
-    {
-      "basename": "yuanFastWAMWorldAction2026",
-      "path": "20-Literature/Sources/yuanFastWAMWorldAction2026.md"
-    },
-    {
-      "basename": "Home",
-      "path": "Home.md"
-    },
-    {
-      "basename": "Paper Verification Prompt",
-      "path": "90-System/Prompts/Paper Verification Prompt.md"
-    },
-    {
-      "basename": "Paper AI Explanation Prompt",
-      "path": "90-System/Prompts/Paper AI Explanation Prompt.md"
-    },
-    {
-      "basename": "ChatGPT Project Instructions",
-      "path": "90-System/Prompts/ChatGPT Project Instructions.md"
     }
   ],
   "omittedPaths": [],

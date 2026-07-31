@@ -1,6 +1,6 @@
 ---
 type: paper
-title: "<% tp.file.title %>"
+title: "AI-Exports"
 status: inbox
 authors: []
 year:
@@ -12,11 +12,11 @@ topics: []
 tags:
   - paper
 review: false
-created: <% tp.date.now("YYYY-MM-DD") %>
-modified: <% tp.date.now("YYYY-MM-DD") %>
+created: 2026-07-31
+modified: 2026-07-31
 ---
 
-# <% tp.file.title %>
+# AI-Exports
 
 > [!summary] 一句话结论
 > 这篇论文最重要的主张是什么？为什么值得读？

@@ -1,26 +1,15 @@
 ---
 type: my-paper-note
 title: "dreamdojo"
-status: processed
-authors: []
-year:
-venue:
-citekey:
-doi:
+citekey: "dreamdojo"
+status: complete
+source: ""
+ai_note: "[[dreamdojo.ai]]"
 topics: []
-tags:
-  - paper
-review: false
-created: 2026-03-08
-modified: 2026-07-30
-source:
-ai_explanation:
-summary_done: true
-verified: false
-rating:
 projects: []
-legacy_import: true
-ai_explanation_done: false
+rating:
+created: "2026-03-08"
+modified: "2026-07-30"
 ---
 
 论文：**DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos**

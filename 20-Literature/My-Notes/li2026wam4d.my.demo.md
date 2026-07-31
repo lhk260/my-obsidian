@@ -1,25 +1,18 @@
 ---
 type: my-paper-note
 title: "WAM4D — My Note 示范草稿"
-citekey: li2026wam4d
+citekey: "li2026wam4d"
+status: draft
 source: "[[li2026wam4d]]"
-ai_explanation: "[[li2026wam4d.ai]]"
-ai_explanation_done: true
-legacy_import: false
-summary_done: false
-verified: false
-demo: true
-rating:
-projects:
-  - world-model
+ai_note: "[[li2026wam4d.ai]]"
 topics:
   - geometry-distillation
   - world-action-model
-review: false
-created: 2026-07-30
-modified: 2026-07-30
-tags:
-  - paper/my-note
+projects:
+  - world-model
+rating:
+created: "2026-07-30"
+modified: "2026-07-30"
 ---
 
 # 使用说明

@@ -2,19 +2,14 @@
 type: my-paper-note
 title: "Fast-WAM: Do World Action Models Need Test-time Future Imagination?"
 citekey: "yuanFastWAMWorldAction2026"
+status: draft
 source: "[[yuanFastWAMWorldAction2026]]"
-ai_explanation: "[[yuanFastWAMWorldAction2026.ai]]"
-ai_explanation_done: false
-summary_done: false
-verified: false
-rating:
-projects: []
+ai_note: "[[yuanFastWAMWorldAction2026.ai]]"
 topics: []
-review: false
-created: 2026-07-30
-modified: 2026-07-30
-tags:
-  - paper/my-note
+projects: []
+rating:
+created: "2026-07-30"
+modified: "2026-07-30"
 ---
 
 # 一句话理解

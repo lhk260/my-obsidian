@@ -35,7 +35,7 @@
       "text-to-insert": "aliases: \ntags: "
     },
     "move-tags-to-yaml": {
-      "enabled": true,
+      "enabled": false,
       "how-to-handle-existing-tags": "Nothing",
       "tags-to-ignore": ""
     },
@@ -52,7 +52,7 @@
       "sort-order": "Ascending Alphabetical"
     },
     "yaml-key-sort": {
-      "enabled": true,
+      "enabled": false,
       "yaml-key-priority-sort-order": "title\ntags\ncategories\ndate\nmodify\ndir\nshare\nbilOut\nexercise",
       "priority-keys-at-start-of-yaml": true,
       "yaml-sort-order-for-other-keys": "None"
@@ -70,7 +70,7 @@
       "update-on-file-contents-updated": "never"
     },
     "yaml-title": {
-      "enabled": true,
+      "enabled": false,
       "title-key": "title",
       "mode": "first-h1-or-filename-if-h1-missing"
     },

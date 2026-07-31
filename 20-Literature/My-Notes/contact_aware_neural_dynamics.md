@@ -1,26 +1,15 @@
 ---
 type: my-paper-note
 title: "contact_aware_neural_dynamics"
-status: processed
-authors: []
-year:
-venue:
-citekey:
-doi:
+citekey: "contact_aware_neural_dynamics"
+status: complete
+source: ""
+ai_note: "[[contact_aware_neural_dynamics.ai]]"
 topics: []
-tags:
-  - paper
-review: false
-created: 2026-03-09
-modified: 2026-07-30
-source:
-ai_explanation:
-summary_done: true
-verified: false
-rating:
 projects: []
-legacy_import: true
-ai_explanation_done: false
+rating:
+created: "2026-03-09"
+modified: "2026-07-30"
 ---
 
 下面是一份 **结构化阅读笔记（适合放进 Obsidian / Markdown / 论文笔记库）**，针对论文  

@@ -1,5 +1,5 @@
 {
-  "promptDelete": false,
+  "promptDelete": true,
   "alwaysUpdateLinks": true,
   "pdfExportSettings": {
     "includeName": true,
@@ -9,7 +9,7 @@
     "downscalePercent": 100
   },
   "newFileLocation": "folder",
-  "newFileFolderPath": "/",
+  "newFileFolderPath": "00-Inbox",
   "showInlineTitle": false,
   "spellcheck": false,
   "showLineNumber": true,

@@ -47,26 +47,22 @@ function makeAiNote({ title, citekey, sourceName, myName, links }) {
 type: ai-explanation
 title: ${yamlString(title)}
 citekey: ${yamlString(citekey)}
+status: waiting
 source: "[[${sourceName}]]"
 my_note: "[[${myName}]]"
-verified: false
-my_note_done: false
 created: ${today()}
-tags:
-  - paper/ai-explanation
 ---
 
 # 使用说明
 
 > [!tip] 已复制讲解提示词并打开 ChatGPT
-> 在 ChatGPT 按 \`Ctrl+V\` 发送；完成后复制完整 Markdown，回到这里覆盖“等待粘贴”以下内容。
+> 在 ChatGPT 按 \`Ctrl+V\` 发送。回答完成后点击回答下方的“复制”，回到 Obsidian 按 \`Ctrl+Alt+V\`，脚本会自动清理并写入。
 
 ## 在线全文
 
 ${links.map((link) => `- ${link}`).join("\n")}
 
-# 等待粘贴
-
+<!-- AI_BODY_START -->
 `;
 }
 
@@ -75,19 +71,14 @@ function makeMyNote({ title, citekey, sourceName, aiName }) {
 type: my-paper-note
 title: ${yamlString(title)}
 citekey: ${yamlString(citekey)}
+status: draft
 source: "[[${sourceName}]]"
-ai_explanation: "[[${aiName}]]"
-ai_explanation_done: false
-summary_done: false
-verified: false
+ai_note: "[[${aiName}]]"
 rating:
 projects: []
 topics: []
-review: false
 created: ${today()}
 modified: ${today()}
-tags:
-  - paper/my-note
 ---
 
 # 一句话理解
@@ -157,7 +148,8 @@ ${evidence}
 7. 逐条建立 Claim—Evidence 对应，并检查信息泄漏、不公平 baseline 和训练—部署不一致。
 8. 区分“论文明确事实”“你的合理推断”“必须查看代码确认”。
 9. 分析局限性、与我的研究可能相关的机制，并提出一个低成本、可证伪的最小验证实验。
-10. 最终只输出一份可直接粘贴进 Obsidian 的中文 Markdown；不要用 Markdown 代码围栏。
+10. 最终只输出正文 Markdown，不要输出 YAML/Frontmatter，不要重复“使用说明”和在线链接，也不要使用包住全文的代码围栏。
+11. 回答完成后，我会使用回答下方的“复制”按钮，再由 Obsidian 自动写入，因此请保留标准 Markdown 标题、表格和公式语法。
 
 请使用以下正文结构：
 # 论文定位
@@ -227,12 +219,17 @@ module.exports = async function () {
     makeMyNote({ title, citekey, sourceName, aiName })
   );
 
-  let updatedSource = sourceText
+  const updatedSource = sourceText
     .replace(/^- AI explanation:.*$/m, `- AI explanation: [[${aiName}]]`)
     .replace(/^- My note:.*$/m, `- My note: [[${myName}]]`);
   if (updatedSource !== sourceText) {
     await app.vault.modify(sourceFile, updatedSource);
   }
+  await app.fileManager.processFrontMatter(sourceFile, (properties) => {
+    properties.status = "explaining";
+    properties.ai_note = `[[${aiName}]]`;
+    properties.my_note = `[[${myName}]]`;
+  });
 
   const prompt = makePrompt({
     title,
@@ -245,5 +242,5 @@ module.exports = async function () {
   await navigator.clipboard.writeText(prompt);
   await app.workspace.getLeaf(false).openFile(aiFile);
   window.open("https://chatgpt.com/", "_blank");
-  new Notice("已创建两层笔记、复制提示词并打开 ChatGPT。请按 Ctrl+V。", 9000);
+  new Notice("已创建笔记并打开 ChatGPT。发送后点击回答的“复制”，回 Obsidian 按 Ctrl+Alt+V。", 10000);
 };

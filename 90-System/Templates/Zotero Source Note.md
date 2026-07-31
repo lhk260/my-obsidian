@@ -2,17 +2,14 @@
 type: source-note
 title: "{{title | escape}}"
 citekey: "{{citekey}}"
+status: inbox
 year: "{{date | format("YYYY")}}"
 authors: "{{authors}}"
 doi: "{{DOI}}"
 url: "{{url}}"
-projects: []
-topics: []
-ai_explanation_done: false
-my_note_done: false
+ai_note: "[[{{citekey}}.ai]]"
+my_note: "[[{{citekey}}.my]]"
 imported: "{{importDate | format("YYYY-MM-DD")}}"
-tags:
-  - paper/source
 ---
 
 # {{title}}
@@ -30,8 +27,6 @@ tags:
 {{abstractNote}}
 
 ## Questions before ChatGPT
-
-<!-- 上传 PDF 前，先写下你希望讲解稿重点回答的问题。 -->
 
 - 
 
@@ -51,9 +46,7 @@ tags:
 {% endif %}
 {% endfor %}
 
-## Pipeline links
+## Pipeline
 
-- AI explanation:
-- My note:
-
-<!-- Source Note 只保存原始材料。不要在这里写长篇个人总结。 -->
+- AI explanation: [[{{citekey}}.ai]]
+- My note: [[{{citekey}}.my]]

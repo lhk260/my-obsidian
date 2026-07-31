@@ -1,37 +1,15 @@
 ---
 type: source-note
 title: "WAM4D: Fast 4D World Action Model via Spatial Register Tokens"
-citekey: li2026wam4d
-authors:
-  - Ying Li
-  - Xiaobao Wei
-  - Jiajun Cao
-  - Hao Wang
-  - Xiaowei Chi
-  - Chengyu Bai
-  - Qianpu Sun
-  - Jiajun Li
-  - Xiaojie Zhang
-  - Jian Tang
-  - Sirui Han
-  - Shanghang Zhang
-year: 2026
-arxiv: "2606.14048"
+citekey: "li2026wam4d"
+status: explained
+year: "2026"
+authors: ""
+doi: ""
 url: "https://arxiv.org/abs/2606.14048"
-pdf: "[[li2026wam4d.pdf]]"
-code: "https://github.com/myendless1/wam4d"
-projects:
-  - world-model
-topics:
-  - world-action-model
-  - 4D-world-model
-  - robot-manipulation
-  - geometry-distillation
-ai_explanation_done: true
-my_note_done: false
-imported: 2026-07-30
-tags:
-  - paper/source
+ai_note: "[[li2026wam4d.ai]]"
+my_note: "[[li2026wam4d.my]]"
+imported: "2026-07-30"
 ---
 
 # WAM4D: Fast 4D World Action Model via Spatial Register Tokens

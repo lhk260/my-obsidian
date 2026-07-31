@@ -1,16 +1,14 @@
 ---
 type: ai-explanation
 title: "WAM4D: Fast 4D World Action Model via Spatial Register Tokens"
-citekey: li2026wam4d
+citekey: "li2026wam4d"
+status: complete
 source: "[[li2026wam4d]]"
 my_note: "[[li2026wam4d.my.demo]]"
-project: world-model
-verified: false
-my_note_done: false
-created: 2026-07-30
-tags:
-  - paper/ai-explanation
+created: "2026-07-30"
 ---
+
+<!-- AI_BODY_START -->
 
 # 论文定位
 

@@ -260,7 +260,7 @@
   "copyOutlineAsHeadingsDisplayTextFormat": "p.{{pageLabel}}",
   "copyOutlineAsHeadingsMinLevel": 2,
   "newFileNameFormat": "20-Literature/Sources/{{file.basename}}.md",
-  "newFileTemplatePath": "90-System/Templates/PDF Source Note.md",
+  "newFileTemplatePath": "",
   "newPDFLocation": "current",
   "newPDFFolderPath": "",
   "rectEmbedStaticImage": false,

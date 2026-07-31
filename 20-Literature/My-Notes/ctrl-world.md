@@ -1,26 +1,15 @@
 ---
 type: my-paper-note
 title: "ctrl-world"
-status: processed
-authors: []
-year:
-venue:
-citekey:
-doi:
+citekey: "ctrl-world"
+status: complete
+source: ""
+ai_note: "[[ctrl-world.ai]]"
 topics: []
-tags:
-  - paper
-review: false
-created: 2026-03-08
-modified: 2026-07-30
-source:
-ai_explanation:
-summary_done: true
-verified: false
-rating:
 projects: []
-legacy_import: true
-ai_explanation_done: false
+rating:
+created: "2026-03-08"
+modified: "2026-07-30"
 ---
 
 > **用生成世界模型替代真实机器人实验，用 imagination rollout 来评估和改进机器人策略。**

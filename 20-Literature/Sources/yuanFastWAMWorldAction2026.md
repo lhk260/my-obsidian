@@ -2,17 +2,14 @@
 type: source-note
 title: "Fast-WAM: Do World Action Models Need Test-time Future Imagination?"
 citekey: "yuanFastWAMWorldAction2026"
+status: explained
 year: "2026"
 authors: "Tianyuan Yuan, Zibin Dong, Yicheng Liu, Hang Zhao"
 doi: "10.48550/arXiv.2603.16666"
 url: "http://arxiv.org/abs/2603.16666"
-projects: []
-topics: []
-ai_explanation_done: false
-my_note_done: false
+ai_note: "[[yuanFastWAMWorldAction2026.ai]]"
+my_note: "[[yuanFastWAMWorldAction2026.my]]"
 imported: "2026-07-30"
-tags:
-  - paper/source
 ---
 
 # Fast-WAM: Do World Action Models Need Test-time Future Imagination?

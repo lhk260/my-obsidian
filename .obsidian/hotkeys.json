@@ -365,5 +365,14 @@
       ],
       "key": "G"
     }
+  ],
+  "quickadd:choice:2f4e6c9a-5f03-4de4-b9be-bc9ef2aec641": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "V"
+    }
   ]
 }

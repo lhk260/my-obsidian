@@ -2,15 +2,13 @@
 type: ai-explanation
 title:
 citekey:
+status: waiting
 source: "[[]]"
 my_note: "[[]]"
-project:
-verified: false
-my_note_done: false
 created:
-tags:
-  - paper/ai-explanation
 ---
+
+<!-- AI_BODY_START -->
 
 # 论文定位
 
@@ -43,5 +41,3 @@ tags:
 ## ChatGPT 合理推断
 
 ## 必须查看代码确认
-
-> [!warning] AI Explanation 是中间材料，不是永久知识。个人结论只写入 My Note。

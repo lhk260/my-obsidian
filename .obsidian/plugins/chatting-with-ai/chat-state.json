@@ -1,1 +1,1 @@
-{"chatHistory":[],"agentMessages":[]}
+{"chatHistory":[{"type":"user","text":"你可以阅读到我的obsidian中的文件吗"},{"type":"error","text":"ChatGPT OAuth request failed (429): The usage limit has been reached. The Codex backend may not accept the selected model or request format. Try reconnecting, picking a different model, or switching to OpenAI API Key."}],"agentMessages":[{"role":"user","content":"[Context: Vault \"my-obsidian\" with 245 markdown files. Active document: 20-Literature/My-Notes/trex.md. ]\n\n你可以阅读到我的obsidian中的文件吗"}]}

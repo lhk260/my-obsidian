@@ -16,3 +16,16 @@
     "outputTokens": 20
   }
 }
+
+--- USER_MESSAGE [2026-07-31T06:16:08.169Z] ---
+{
+  "userMessage": "你可以阅读到我的obsidian中的文件吗",
+  "hasSelection": false
+}
+
+--- API_ERROR [2026-07-31T06:16:16.003Z] ---
+{
+  "error": "ChatGPT OAuth request failed (429): The usage limit has been reached. The Codex backend may not accept the selected model or request format. Try reconnecting, picking a different model, or switching to OpenAI API Key.",
+  "model": "gpt-5.5",
+  "provider": "chatgpt-oauth"
+}

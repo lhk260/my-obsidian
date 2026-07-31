@@ -4,7 +4,7 @@
   "wordsPerDot": 250,
   "showWeeklyNote": true,
   "weeklyNoteFormat": "gggg-[W]ww-MM",
-  "weeklyNoteTemplate": "",
-  "weeklyNoteFolder": "日记/",
+  "weeklyNoteTemplate": "90-System/Templates/weekly.md",
+  "weeklyNoteFolder": "10-Daily/weekly",
   "localeOverride": "system-default"
 }
