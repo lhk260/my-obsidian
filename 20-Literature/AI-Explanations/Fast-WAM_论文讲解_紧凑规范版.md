@@ -1,3 +1,4 @@
+
 # 论文定位
 
 Fast-WAM 的核心不是否定世界模型，而是把未来视频生成从部署时必需的中间过程改成训练期辅助监督。训练时同时预测未来视频 latent 和 action chunk，并通过 causal attention mask 阻止动作 token 读取未来视频；部署时删除未来视频生成，只保留当前图像编码和动作 flow。
