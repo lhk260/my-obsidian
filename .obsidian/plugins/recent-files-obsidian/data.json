@@ -1,10 +1,6 @@
 {
   "recentFiles": [
     {
-      "basename": "li2026wam4d.my.demo",
-      "path": "20-Literature/My-Notes/li2026wam4d.my.demo.md"
-    },
-    {
       "basename": "li2026wam4d.ai",
       "path": "20-Literature/AI-Explanations/li2026wam4d.ai.md"
     },
@@ -15,6 +11,14 @@
     {
       "basename": "Fast-WAM_论文讲解_紧凑规范版",
       "path": "20-Literature/AI-Explanations/Fast-WAM_论文讲解_紧凑规范版.md"
+    },
+    {
+      "basename": "rise",
+      "path": "20-Literature/My-Notes/rise.md"
+    },
+    {
+      "basename": "li2026wam4d.my.demo",
+      "path": "20-Literature/My-Notes/li2026wam4d.my.demo.md"
     },
     {
       "basename": "yuanFastWAMWorldAction2026",
@@ -55,10 +59,6 @@
     {
       "basename": "Templates",
       "path": "90-System/Templates/Templates.md"
-    },
-    {
-      "basename": "Literature Dashboard",
-      "path": "20-Literature/Literature Dashboard.md"
     }
   ],
   "omittedPaths": [],
