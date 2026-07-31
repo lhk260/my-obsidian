@@ -11,6 +11,7 @@ created: 2026-07-30
 tags:
   - paper/ai-explanation
 ---
+
 # 使用说明
 
 > [!tip] 已复制讲解提示词并打开 ChatGPT
