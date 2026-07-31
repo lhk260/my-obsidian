@@ -5,6 +5,10 @@
       "path": "20-Literature/AI-Explanations/li2026wam4d.ai.md"
     },
     {
+      "basename": "li2026wam4d",
+      "path": "20-Literature/PDFs/li2026wam4d.pdf"
+    },
+    {
       "basename": "Fast-WAM_论文讲解_紧凑规范版",
       "path": "20-Literature/AI-Explanations/Fast-WAM_论文讲解_紧凑规范版.md"
     },
@@ -55,10 +59,6 @@
     {
       "basename": "ChatGPT Project Instructions",
       "path": "90-System/Prompts/ChatGPT Project Instructions.md"
-    },
-    {
-      "basename": "li2026wam4d",
-      "path": "20-Literature/Sources/li2026wam4d.md"
     }
   ],
   "omittedPaths": [],
