@@ -10,7 +10,7 @@
   },
   "newFileLocation": "folder",
   "newFileFolderPath": "/",
-  "showInlineTitle": true,
+  "showInlineTitle": false,
   "spellcheck": false,
   "showLineNumber": true,
   "trashOption": "local",

@@ -1,1707 +1,817 @@
-
----
-type: ai-explanation
-title: "Fast-WAM: Do World Action Models Need Test-time Future Imagination?"
-citekey: "yuanFastWAMWorldAction2026"
-source: "[[yuanFastWAMWorldAction2026]]"
-my_note: "[[yuanFastWAMWorldAction2026.my]]"
-verified: false
-my_note_done: false
-created: 2026-07-30
-tags:
-  - paper/ai-explanation
----
-# 使用说明
-
-> [!tip] 已复制讲解提示词并打开 ChatGPT
-> 在 ChatGPT 按 `Ctrl+V` 发送；完成后复制完整 Markdown，回到这里覆盖“等待粘贴”以下内容。
-
-## 在线全文
-
-- 摘要：https://arxiv.org/abs/2603.16666
-- HTML 全文：https://arxiv.org/html/2603.16666
-- PDF 全文：https://arxiv.org/pdf/2603.16666
-
----
-
-type: ai-explanation
-
-title: "Fast-WAM: Do World Action Models Need Test-time Future Imagination?"
-
-citekey: "yuanFastWAMWorldAction2026"
-
-source: "[[yuanFastWAMWorldAction2026]]"
-
-my_note: "[[yuanFastWAMWorldAction2026.my]]"
-
-verified: false
-
-my_note_done: false
-
-created: 2026-07-30
-
-tags:
-
-  - paper/ai-explanation
-
----
-
-  
-
-# 使用说明
-
-  
-
-> [!tip] 已复制讲解提示词并打开 ChatGPT
-
-> 在 ChatGPT 按 `Ctrl+V` 发送；完成后复制完整 Markdown，回到这里覆盖“等待粘贴”以下内容。
-
-  
-
-## 在线全文
-
-  
-
-- 摘要：https://arxiv.org/abs/2603.16666
-
-- HTML 全文：https://arxiv.org/html/2603.16666
-
-- PDF 全文：https://arxiv.org/pdf/2603.16666
-
-  
-
 # 论文定位
-
-  
 
 Fast-WAM 的核心不是否定世界模型，而是把未来视频生成从部署时必需的中间过程改成训练期辅助监督。训练时同时预测未来视频 latent 和 action chunk，并通过 causal attention mask 阻止动作 token 读取未来视频；部署时删除未来视频生成，只保留当前图像编码和动作 flow。
 
-  
-
 > 更准确地说，它是一个利用训练期未来视频预测塑造世界表征、但部署接口仍为 current RGB + proprioception + language → action chunk 的 causal World Action Model。
-
-  
 
 论文要区分两种收益：训练时学习未来带来的表示增益，以及测试时显式生成未来带来的 foresight。实验显示，前者重要，后者平均收益较小。
 
-  
-
 - 论文：Fast-WAM: Do World Action Models Need Test-time Future Imagination?
-
-- citekey： `yuanFastWAMWorldAction2026`
-
-- 版本：arXiv: 2603.16666v2，2026-03-23
-
+- citekey：`yuanFastWAMWorldAction2026`
+- 版本：arXiv:2603.16666v2，2026-03-23
 - PDF：13 页
-
 - 第 2 节：Related Work
-
 - 第 3 节：Method
-
-  
 
 # 问题设定
 
-  
-
 普通 VLA 直接预测未来动作：
 
-  
-
 $$
-
 p_\theta(a_{1:H}\mid o_t,s_t,l).
-
 $$
 
-  
-
-其中 $o_t$ 是当前视觉， $s_t$ 是当前 proprioception， $l$ 是语言指令， $a_{1:H}$ 是 action chunk。
-
-  
+其中 $o_t$ 是当前视觉，$s_t$ 是当前 proprioception，$l$ 是语言指令，$a_{1:H}$ 是 action chunk。
 
 典型 imagine-then-execute WAM 则将未来视频作为中间变量：
 
-  
-
 $$
-
 p(a_{1:H}\mid o_t,l)
-
 =
-
 \int
-
 p(v_{1:T}\mid o_t,l)\,
-
 p(a_{1:H}\mid o_t,l,v_{1:T})
-
 \,dv_{1:T}.
-
 $$
-
-  
 
 实际通常先生成未来：
 
-  
-
 $$
-
 \hat v_{1:T}\sim p(v_{1:T}\mid o_t,l),
-
 \qquad
-
 \hat a_{1:H}\sim p(a_{1:H}\mid o_t,l,\hat v_{1:T}).
-
 $$
-
-  
 
 这种设计把“训练期未来监督”和“测试期显式 foresight”绑定在一起。Fast-WAM 用结构消融将两者分开。本文只研究单个 action chunk 加闭环重规划，不涉及无限长自回归 world rollout，因此结论不能直接推广到长时程规划或反事实搜索。
 
-  
-
 # 方法总览
 
-  
-
 | 模型 | 训练时视频预测 | 测试时生成未来 | 动作读取未来 |
-
 |---|---:|---:|---:|
-
 | Fast-WAM | 是 | 否 | 否 |
-
 | Fast-WAM-Joint | 是 | 是 | 是，视频与动作联合去噪 |
-
 | Fast-WAM-IDM | 是 | 是 | 是，先视频后动作 |
-
 | Fast-WAM w.o. video co-train | 否 | 否 | 否 |
-
-  
 
 训练时，视频 VAE 编码当前与未来 RGB；T5 编码语言；当前 proprioception 经线性层变成额外 context token。未来视频 latent 和 action chunk 分别加噪，再送入 Video DiT、Action DiT 与 Mixture-of-Transformer。两个分支分别预测视频和动作的 flow target。
 
-  
-
 部署时只保留当前 RGB、当前 proprioception 和语言。Video DiT 只运行一次并建立视觉 KV cache，随后 Action DiT 从高斯噪声迭代生成 action chunk。Fast-WAM 的加速来自删除未来视频的初始化、去噪和解码；动作本身仍需要多步 flow denoising。
-
-  
 
 # 输入、输出与张量
 
-  
-
 | 项目 | LIBERO | RoboTwin |
-
 |---|---:|---:|
-
 | 相机数 | 2 | 3 |
-
 | 单相机分辨率 | $224\times224$ | $240\times320$ |
-
 | 拼接图像 | $224\times448$ | $384\times320$ |
-
 | 原始视频长度 | 33 | 33 |
-
 | Action chunk | 32 | 32 |
-
 | Action 维度 | 7 | 14 |
-
 | State 维度 | 8 | 14 |
-
 | VAE latent 时间步 | 9 | 9 |
-
-  
 
 LIBERO action 为 6 维 EEF pose 加 1 维 gripper；state 为 6 维 EEF pose 加 2 维 gripper qpos。虽然数据接口提供 state 序列，模型只使用首个时刻：
 
-  
-
 $$
-
 s_{\mathrm{input}}=s_{[:,0,:]}.
-
 $$
-
-  
 
 语言和 state 被编码成共享 context：
 
-  
-
 $$
-
 c_l=E_{\mathrm{T5}}(l),\qquad
-
 c_s=W_s s_t+b_s,\qquad
-
 c=[c_l;c_s].
-
 $$
-
-  
 
 合理推断 LIBERO 的视频 latent 约为：
 
-  
-
 $$
-
 z_{\mathrm{LIBERO}}
-
 \in
-
 \mathbb R^{B\times48\times9\times14\times28}.
-
 $$
-
-  
 
 Video DiT 使用 $(1,2,2)$ patch，因此每个 latent 时间步约有：
 
-  
-
 $$
-
 \frac{14}{2}\times\frac{28}{2}=98
-
 $$
-
-  
 
 个视频 token，9 个时间步共约 882 个。
 
-  
-
 RoboTwin latent 可合理推断为：
 
-  
-
 $$
-
 z_{\mathrm{RoboTwin}}
-
 \in
-
 \mathbb R^{B\times48\times9\times24\times20}.
-
 $$
-
-  
 
 每个时间步约有：
 
-  
-
 $$
-
 \frac{24}{2}\times\frac{20}{2}=120
-
 $$
-
-  
 
 个视频 token。具体 latent 形状依赖 Wan VAE 实现，正文未直接给出。
 
-  
-
 # 模块逐一讲解
-
-  
 
 ## Video VAE 与条件编码
 
-  
-
 多相机 RGB 拼接后由 Wan 视频 VAE 编码：
 
-  
-
 $$
-
 z_{0:T}=E_{\mathrm{VAE}}(x_{0:T}).
-
 $$
-
-  
 
 T5 编码语言，当前 proprioception 通过线性层变成一个额外 context token。VAE 和 T5 在机器人训练中冻结。
 
-  
-
 ## Video DiT
-
-  
 
 Video DiT 来自 Wan2.2-TI2V-5B，主要配置为 30 层、hidden dimension 3072、24 个 attention heads、head dimension 128、latent channel 48。训练时输入当前干净 latent 和未来 noisy latent；推理时只输入当前帧，因此其角色从 future-video generator 变为 current-world encoder。
 
-  
-
 ## Action DiT
-
-  
 
 Action DiT 约 1B 参数，包含 30 层、hidden dimension 1024、24 个 attention heads、head dimension 128。整个动作块并行建模：
 
-  
-
 $$
-
 a\in\mathbb R^{B\times H\times D_a},
-
 \qquad
-
 \hat u_a\in\mathbb R^{B\times H\times D_a}.
-
 $$
-
-  
 
 它不是逐步自回归生成动作，而是从随机动作噪声经过 flow matching 得到完整 action chunk。
 
-  
-
 ## Mixture-of-Transformer
-
-  
 
 Video DiT 和 Action DiT hidden width 不同，但层数、head 数和 head dimension 相同，因此可以在每层的 attention 空间中进行混合。
 
-  
-
-令 $F_0$ 为当前帧视频 token， $F_+$ 为未来视频 token， $A$ 为动作 token。Fast-WAM 的关键可见性为：
-
-  
+令 $F_0$ 为当前帧视频 token，$F_+$ 为未来视频 token，$A$ 为动作 token。Fast-WAM 的关键可见性为：
 
 | Query | 可见 Key/Value |
-
 |---|---|
-
 | 当前帧 $F_0$ | 当前帧 |
-
 | 未来视频 $F_+$ | 当前帧、未来视频 |
-
 | 动作 $A$ | 当前帧、动作 |
-
 | 所有分支 | language、proprioception context |
-
-  
 
 动作层可写为：
 
-  
-
 $$
-
 H_A^{\ell+1}
-
 =
-
 \operatorname{ActionBlock}_\ell
-
 \left(
-
 Q=H_A^\ell,\;
-
 K,V=[H_A^\ell,H_{F_0}^\ell]
-
 \right).
-
 $$
-
-  
 
 动作不能读取未来视频：
 
-  
-
 $$
-
 A\not\rightarrow F_+.
-
 $$
-
-  
 
 当前帧也不能读取未来视频：
 
-  
-
 $$
-
 F_0\not\rightarrow F_+.
-
 $$
-
-  
 
 这同时避免动作直接读取 GT future-video token，以及当前帧先读取未来再间接泄漏给动作。
 
-  
-
 ## KV cache
-
-  
 
 推理时当前图像不随动作去噪步变化，因此 Video DiT 只运行一次，并缓存逐层 KV：
 
-  
-
 $$
-
 \mathcal C_v
-
 =
-
 \{K_v^1,V_v^1,\ldots,K_v^L,V_v^L\}.
-
 $$
-
-  
 
 每个动作去噪步只重新计算动作分支：
 
-  
-
 $$
-
 H_A^{\ell+1,k}
-
 =
-
 \operatorname{ActionBlock}_\ell
-
 \left(
-
 Q=H_A^{\ell,k},\;
-
 K,V=[H_A^{\ell,k},\mathcal C_v^\ell]
-
 \right).
-
 $$
-
-  
 
 ## 是否是 action-conditioned world model
 
-  
-
-基础 Fast-WAM 配置中 `action_conditioned=false` ，所以视频分支更接近：
-
-  
+基础 Fast-WAM 配置中 `action_conditioned=false`，所以视频分支更接近：
 
 $$
-
 p(z_{1:T}\mid z_0,s_t,l),
-
 $$
-
-  
 
 而不是严格的：
 
-  
-
 $$
-
 p(z_{1:T}\mid z_0,a_{1:H},s_t,l).
-
 $$
-
-  
 
 它学习的是任务和 demonstration policy 条件下的典型未来，而不是“不同动作会分别导致什么结果”的反事实动力学。
 
-  
-
 # 训练流程
-
-  
 
 训练样本包含多相机 RGB 视频、语言指令、当前 proprioception、32-step action chunk 以及 image/action padding mask。
 
-  
-
 RGB 经 VAE 编码，视频和动作分别采样噪声与 flow timestep：
 
-  
-
 $$
-
 \epsilon_v,\epsilon_a\sim\mathcal N(0,I),
-
 \qquad
-
 t_v,t_a\sim p(t).
-
 $$
-
-  
 
 构造 noisy state：
 
-  
-
 $$
-
 z_{t_v}=(1-t_v)z+t_v\epsilon_v,
-
 \qquad
-
 a_{t_a}=(1-t_a)a+t_a\epsilon_a.
-
 $$
-
-  
 
 当前帧恢复为干净 latent：
 
-  
-
 $$
-
 z_{t_v}^{[:,:,0:1]}=z_0.
-
 $$
-
-  
 
 Video expert 和 Action expert 产生 token，经带 causal mask 的 MoT：
 
-  
-
 $$
-
 (H_v^L,H_a^L)
-
 =
-
 \operatorname{MoT}(H_v^0,H_a^0,M,c).
-
 $$
-
-  
 
 两个分支分别输出视频和动作 velocity：
 
-  
-
 $$
-
 \hat u_v=\operatorname{VideoPostDiT}(H_v^L),
-
 \qquad
-
 \hat u_a=\operatorname{ActionPostDiT}(H_a^L).
-
 $$
-
-  
 
 Flow matching 使用线性路径：
 
-  
-
 $$
-
 y_t=(1-t)y+t\epsilon,
-
 \qquad
-
 u^\star=\frac{dy_t}{dt}=\epsilon-y.
-
 $$
-
-  
 
 因此：
 
-  
-
 $$
-
 u_v^\star=\epsilon_v-z,
-
 \qquad
-
 u_a^\star=\epsilon_a-a.
-
 $$
-
-  
 
 视频和动作损失为：
 
-  
-
 $$
-
 \mathcal L_{\mathrm{video}}
-
 =
-
 \mathbb E
-
 \left[
-
 \left\|
-
 \hat u_v-u_v^\star
-
 \right\|_2^2
-
 \right],
-
 $$
 
-  
-
 $$
-
 \mathcal L_{\mathrm{action}}
-
 =
-
 \mathbb E
-
 \left[
-
 \left\|
-
 \hat u_a-u_a^\star
-
 \right\|_2^2
-
 \right].
-
 $$
-
-  
 
 总目标为：
 
-  
-
 $$
-
 \mathcal L
-
 =
-
 \lambda_v\mathcal L_{\mathrm{video}}
-
 +
-
 \lambda_a\mathcal L_{\mathrm{action}}.
-
 $$
 
-  
-
-当前代码默认 $\lambda_v=\lambda_a=1$ 。训练时冻结 VAE 和 T5，更新 Video DiT、Action DiT、MoT 和 proprioception encoder，因此视频 loss 会直接塑造部署时使用的当前视觉表示。
-
-  
+当前代码默认 $\lambda_v=\lambda_a=1$。训练时冻结 VAE 和 T5，更新 Video DiT、Action DiT、MoT 和 proprioception encoder，因此视频 loss 会直接塑造部署时使用的当前视觉表示。
 
 # 推理流程
 
-  
-
 每次重规划输入：
 
-  
-
 $$
-
 (o_t,s_t,l).
-
 $$
-
-  
 
 当前 RGB 经 VAE 编码：
 
-  
-
 $$
-
 z_t=E_{\mathrm{VAE}}(o_t).
-
 $$
-
-  
 
 Video DiT 运行一次：
 
-  
-
 $$
-
 H_v=E_{\mathrm{video}}(z_t,t_v=0,c),
-
 \qquad
-
 \mathcal C_v=\operatorname{KVCache}(H_v).
-
 $$
-
-  
 
 动作从高斯噪声开始：
 
-  
-
 $$
-
 a^{(K)}
-
 \sim
-
 \mathcal N(0,I_{H\times D_a}).
-
 $$
 
-  
-
-实验使用 $H=32$ 、 $K=10$ 。每个去噪步：
-
-  
+实验使用 $H=32$、$K=10$。每个去噪步：
 
 $$
-
 \hat u_a^{(k)}
-
 =
-
 f_{\theta_a}
-
 \left(
-
 a^{(k)},t_k,c,\mathcal C_v
-
 \right),
-
 $$
 
-  
-
 $$
-
 a^{(k-1)}
-
 =
-
 a^{(k)}
-
 +
-
 \Delta t_k\hat u_a^{(k)}.
-
 $$
-
-  
 
 最终输出：
 
-  
-
 $$
-
 \hat a_{1:32}=a^{(0)}.
-
 $$
-
-  
 
 LIBERO 官方评估配置每次只执行前 10 步，再重新观察：
 
-  
-
 $$
-
 \text{predict 32}
-
 \rightarrow
-
 \text{execute 10}
-
 \rightarrow
-
 \text{replan}.
-
 $$
-
-  
 
 所以 Fast-WAM 删除的是测试时 future-video generation，而不是动作 flow、action chunk 或闭环控制。
 
-  
-
 # 公式讲解
-
-  
 
 Fast-WAM 将当前上下文编码为 latent world representation：
 
-  
-
 $$
-
 h_t=E_{\mathrm{world}}(o_t,s_t,l),
-
 $$
-
-  
 
 再生成动作：
 
-  
-
 $$
-
 p_\theta(a_{1:H}\mid o_t,s_t,l)
-
 =
-
 p_\theta(a_{1:H}\mid h_t).
-
 $$
-
-  
 
 这里的 $h_t$ 不是测试时生成的未来轨迹，而是经过未来视频辅助任务塑造的当前状态表示。
 
-  
-
 视频和动作使用同一类 flow-matching 目标：
 
-  
-
 $$
-
 \mathcal L_{\mathrm{FM}}
-
 =
-
 \mathbb E
-
 \left[
-
 \left\|
-
 f_\theta(y_t,t,\text{condition})
-
 -
-
 (\epsilon-y)
-
 \right\|_2^2
-
 \right].
-
 $$
-
-  
 
 对动作：
 
-  
-
 $$
-
 y=a_{1:H},
-
 \qquad
-
 \mathcal L_{\mathrm{action}}
-
 =
-
 \mathcal L_{\mathrm{FM}}(a_{1:H}).
-
 $$
-
-  
 
 对未来视频 latent：
 
-  
-
 $$
-
 y=z_{1:T},
-
 \qquad
-
 \mathcal L_{\mathrm{video}}
-
 =
-
 \mathcal L_{\mathrm{FM}}(z_{1:T}).
-
 $$
-
-  
 
 该目标能够验证视频预测监督是否提升动作策略，但不能单独证明隐藏表示已经具备 metric geometry、接触物理或动作反事实能力。
 
-  
-
 # 实验与 Claim—Evidence
-
-  
 
 ## RoboTwin 2.0
 
-  
-
 | 模型 | Clean | Randomized | 平均 |
-
 |---|---:|---:|---:|
-
 | $\pi_0$ | 65.92 | 58.40 | 62.2 |
-
 | $\pi_{0.5}$ | 82.74 | 76.76 | 79.8 |
-
 | Motus | 88.66 | 87.02 | 87.8 |
-
 | LingBot-VA | 92.90 | 91.50 | 92.2 |
-
 | Fast-WAM | 91.88 | 91.78 | 91.8 |
-
 | Fast-WAM-Joint | 90.84 | 90.32 | 90.6 |
-
 | Fast-WAM-IDM | 91.16 | 91.34 | 91.3 |
-
 | 无 video co-train | 82.76 | 84.80 | 83.8 |
-
-  
 
 删除视频 co-training 后：
 
-  
-
 $$
-
 91.8-83.8=8.0.
-
 $$
-
-  
 
 显式未来变体与 Fast-WAM 的差异只有：
 
-  
-
 $$
-
 91.8-91.3=0.5,
-
 \qquad
-
 91.8-90.6=1.2.
-
 $$
-
-  
 
 ## LIBERO
 
-  
-
 | 模型 | Spatial | Object | Goal | Long | 平均 |
-
 |---|---:|---:|---:|---:|---:|
-
 | $\pi_{0.5}$ | 98.8 | 98.2 | 98.0 | 92.4 | 96.9 |
-
 | LingBot-VA | 98.5 | 99.6 | 97.2 | 98.5 | 98.5 |
-
 | Motus | 96.8 | 99.8 | 96.6 | 97.6 | 97.7 |
-
 | Fast-WAM | 98.2 | 100.0 | 97.0 | 95.2 | 97.6 |
-
-| Fast-WAM-Joint | 99.6 | 99.4 | 98.2 | 96.8 | 98.5 |
-
-| Fast-WAM-IDM | 98.8 | 97.8 | 97.8 | 97.6 | 98.0 |
-
+| Fast-WAM-Joint | 99.0 | 100.0 | 98.2 | 96.8 | 98.5 |
+| Fast-WAM-IDM | 98.8 | 99.8 | 97.4 | 96.0 | 98.0 |
 | 无 video co-train | 94.2 | 100.0 | 96.8 | 83.2 | 93.5 |
-
-  
 
 删除视频 co-training 后：
 
-  
-
 $$
-
 97.6-93.5=4.1.
-
 $$
-
-  
 
 Joint 和 IDM 相对 Fast-WAM 的平均提升仅为：
 
-  
-
 $$
-
 98.5-97.6=0.9,
-
 \qquad
-
 98.0-97.6=0.4.
-
 $$
-
-  
 
 ## 真机毛巾折叠
 
-  
-
 图 4 报告：
 
-  
-
 - Fast-WAM：190 ms；
-
 - Fast-WAM-IDM：810 ms；
-
 - 无视频 co-training 成功率：10%；
-
 - IDM 在 Fast-WAM family 中成功率最高；
-
 - Fast-WAM 平均完成时间更短。
-
-  
 
 延迟倍率为：
 
-  
-
 $$
-
 \frac{810}{190}\approx4.26.
-
 $$
-
-  
 
 | Claim | 证据 | 严格解释 |
-
 |---|---|---|
-
 | 训练期视频预测很重要 | RoboTwin 降 8.0，LIBERO 降 4.1，真机降到 10% | 支持较强 |
-
 | 测试时未来生成平均收益有限 | Fast-WAM 与 Joint/IDM 平均差距较小 | 在本文 setting 下支持 |
-
 | 删除未来生成显著降延迟 | 190 ms 对 810 ms | 主要相对 IDM |
-
 | 无机器人 embodied pretraining 也有竞争力 | RoboTwin 91.8，LIBERO 97.6 | 仍使用大规模 Wan 视频预训练 |
-
 | 学到了 world-grounded representation | 控制性能随视频 loss 提升 | 只有间接证据 |
-
 | 显式未来普遍不需要 | 未覆盖强 OOD、候选动作比较 | 证据不足 |
-
-  
 
 附录单任务结果存在明显异质性。例如 Open Microwave 中 Joint 显著差于 Fast-WAM，Place Can Basket 中无视频 co-training 不弱，说明平均趋势不能解释所有任务。
 
-  
-
 # 批判性分析
-
-  
 
 ## 1. 防信息泄漏设计合理
 
-  
-
 动作和当前帧均不能读取未来视频，因此阻断：
 
-  
-
 $$
-
 F_+\rightarrow A,
-
 \qquad
-
 F_+\rightarrow F_0\rightarrow A.
-
 $$
-
-  
 
 视频 loss 通过共享参数影响动作，不属于样本级 privileged-information leakage，而属于训练监督。
 
-  
-
-但训练函数仍向 Video DiT 传入 GT action，而基础配置为 `action_conditioned=false` 。应通过代码验证：
-
-  
+但训练函数仍向 Video DiT 传入 GT action，而基础配置为 `action_conditioned=false`。应通过代码验证：
 
 $$
-
 \frac{\partial\hat u_v}{\partial a}=0.
-
 $$
-
-  
 
 ## 2. No-video 对照只隔离机器人阶段的视频损失
 
-  
-
 无视频 co-training 模型仍初始化自 Wan2.2，因此它不是“没有 world-model prior”，而是“没有在机器人 demonstration 上继续做未来视频训练”。
-
-  
 
 实验只支持机器人数据上的视频辅助监督有用，不能证明所有收益都来自世界建模而非预训练视觉表示。
 
-  
-
 ## 3. “无 embodied pretraining”不等于无大规模预训练
-
-  
 
 Fast-WAM 没有额外机器人动作预训练，但使用大规模视频生成 backbone。它降低的是 embodied data 需求，不是总预训练成本。
 
-  
-
 ## 4. 训练—部署仍有轻微差异
-
-  
 
 训练时 sequence 中存在 future-video token，部署时完全删除。Mask 保证动作信息路径一致，但 sequence 长度、共享 attention 环境和优化目标仍不同。标准行为克隆 covariate shift 也没有被解决：训练状态来自 expert，部署状态来自自身策略。
 
-  
-
 ## 5. Single forward pass 仅针对 Video DiT
-
-  
 
 完整推理约为：
 
-  
-
 $$
-
 1\times\text{Video DiT}
-
 +
-
 10\times\text{Action DiT}.
-
 $$
-
-  
 
 190 ms 对应串行高层重规划频率约：
 
-  
-
 $$
-
 \frac{1}{0.19}\approx5.3\ \mathrm{Hz}.
-
 $$
-
-  
 
 它不是一步动作回归模型。
 
-  
-
 ## 6. “世界表征”缺乏直接测量
-
-  
 
 论文没有测试表示是否能解码物体位姿、接触状态、任务进度、失败风险、动力学参数或候选动作后果。视频 loss 的提升也可能来自多任务正则化、更强视觉语义、优化稳定性或任务阶段识别。
 
-  
-
 ## 7. 基础模型不是动作因果 world model
-
-  
 
 基础视频分支不显式建模：
 
-  
-
 $$
-
 p(z_{t+\Delta}\mid z_t,a_{t:t+H}),
-
 $$
-
-  
 
 而更接近：
 
-  
-
 $$
-
 p(z_{t+\Delta}\mid z_t,l,s_t).
-
 $$
-
-  
 
 所以它不能直接回答“如果换一个动作，未来会怎样”。这限制了其反事实规划能力。
 
-  
-
 ## 8. 显式未来在其他场景仍可能有价值
-
-  
 
 本文的闭环 action chunk 会频繁获得真实反馈，削弱长期想象需求。但多种可能未来、候选动作比较、长时程稀疏奖励、不可逆动作、安全与碰撞预测、强遮挡、动力学 OOD 和失败恢复仍可能需要 test-time imagination。
 
-  
-
 ## 9. 统计证据不完整
-
-  
 
 论文未充分报告多训练 seed 方差、置信区间、真机 episode 数、延迟方差和 checkpoint selection。0.4%–0.9% 的平均差异未必统计显著。
 
-  
-
 # 与我的研究的关系
-
-  
 
 Fast-WAM 最值得借鉴的是：
 
-  
-
 > 用只在训练期存在的未来监督塑造共享 backbone，但通过 causal mask 阻止未来信息成为动作预测捷径，部署时只保留 latent world representation。
-
-  
 
 这与你不希望测试时生成像素视频的方向一致：
 
-  
-
 $$
-
 h_t=E_{\mathrm{world}}(o_t,s_t,l),
-
 \qquad
-
 a_{1:H}\sim\pi(a_{1:H}\mid h_t).
-
 $$
-
-  
 
 训练时可加入 world auxiliary loss：
 
-  
-
 $$
-
 \mathcal L
-
 =
-
 \mathcal L_{\mathrm{action}}
-
 +
-
 \lambda_w\mathcal L_{\mathrm{world}}.
-
 $$
-
-  
 
 Fast-WAM 的 world target 仍然是 task-conditioned future video，缺少动作因果。你的方案可以改为动作条件物理效果：
 
-  
-
 $$
-
 \hat e_{t+\Delta}
-
 =
-
 g_\phi(h_t,a_{t:t+H}),
-
 $$
-
-  
 
 其中：
 
-  
-
 $$
-
 e_{t+\Delta}
-
 =
-
 [
-
 \text{object pose},
-
 \text{contact},
-
 \text{grasp},
-
 \text{slip},
-
 \text{deformation},
-
 \text{progress}
-
 ].
-
 $$
-
-  
 
 辅助损失：
 
-  
-
 $$
-
 \mathcal L_{\mathrm{effect}}
-
 =
-
 \left\|
-
 \hat e_{t+\Delta}-e_{t+\Delta}
-
 \right\|_2^2.
-
 $$
-
-  
 
 同一动作在不同接触条件下应产生不同表示：
 
-  
-
 $$
-
 g_\phi(h_t^{\mathrm{contact}},a)
-
 \neq
-
 g_\phi(h_t^{\mathrm{no\ contact}},a).
-
 $$
-
-  
 
 不同低层轨迹若产生相同对象效果，应接近：
 
-  
-
 $$
-
 g_\phi(h_t,a)
-
 \approx
-
 g_\phi(h_t,a').
-
 $$
-
-  
 
 成功—失败反思可建立在效果差异上：
 
-  
-
 $$
-
 \Delta e_{\mathrm{diff}}
-
 =
-
 \Delta e_{\mathrm{success}}
-
 -
-
 \Delta e_{\mathrm{failure}}.
-
 $$
-
-  
 
 在 REVAMP 中，可将 world representation 与 Q 模型结合：
 
-  
-
 $$
-
 \mathcal L
-
 =
-
 \mathcal L_{\mathrm{action}}
-
 +
-
 \lambda_w\mathcal L_{\mathrm{world}}
-
 +
-
 \lambda_Q\mathcal L_Q,
-
 $$
 
-  
-
 $$
-
 a^\star
-
 =
-
 \arg\max_{a^{(i)}}
-
 Q_\psi(h_t,a^{(i)}).
-
 $$
-
-  
 
 对于衣物操作，future-video target 可以替换为 cloth area、coverage、support ratio、lifted state、contact heatmap 和 deformation energy，从而验证性能提升究竟来自像素预测还是物理效果监督。
 
-  
-
 # 最小验证实验
-
-  
 
 ## 假设
 
-  
-
 训练期未来监督比测试期显式生成更重要；动作条件物理效果监督可以替代视频 latent 监督。
-
-  
 
 ## 最小设计
 
-  
-
 使用已有 RoboCasa `TurnOnSinkFaucet` 数据，选取 100–300 条 demonstrations，共用同一 backbone、Action DiT、训练步数、action normalization、flow steps 和 replan interval。
-
-  
 
 1. Action-only：
 
-  
-
 $$
-
 \mathcal L_A=\mathcal L_{\mathrm{action}}.
-
 $$
-
-  
 
 2. Fast-WAM video co-training，测试不生成未来：
 
-  
-
 $$
-
 \mathcal L_B
-
 =
-
 \mathcal L_{\mathrm{action}}
-
 +
-
 \lambda_v\mathcal L_{\mathrm{video}}.
-
 $$
-
-  
 
 3. Action-conditioned effect co-training：
 
-  
-
 $$
-
 e_{t+\Delta}
-
 =
-
 [
-
 \theta_{\mathrm{faucet}},
-
 d_{\mathrm{eef-handle}},
-
 c_{\mathrm{contact}},
-
 g_{\mathrm{gripper}},
-
 q_{\mathrm{progress}}
-
 ].
-
 $$
 
-  
-
 $$
-
 \mathcal L_C
-
 =
-
 \mathcal L_{\mathrm{action}}
-
 +
-
 \lambda_e
-
 \left\|
-
 g_\phi(h_t,a_{t:t+H})-e_{t+\Delta}
-
 \right\|_2^2.
-
 $$
-
-  
 
 4. 与 B 相同训练，但测试时显式生成未来并提供给动作。
 
-  
-
 评估 clean success、初始角度和位置 OOD、EEF 扰动后的 recovery、推理 latency，以及 faucet angle、contact、progress、failure probe。
-
-  
 
 固定同一观测，构造正确和错误候选动作：
 
-  
-
 $$
-
 \hat e^+=g_\phi(h_t,a^+),
-
 \qquad
-
 \hat e^-=g_\phi(h_t,a^-).
-
 $$
-
-  
 
 若模型具备动作因果，应满足：
 
-  
-
 $$
-
 \Delta\theta_{\mathrm{faucet}}^+
-
 >
-
 \Delta\theta_{\mathrm{faucet}}^-.
-
 $$
-
-  
 
 若 B 明显优于 A，而显式想象组相对 B 提升不超过 2% 且延迟显著增加，则支持 Fast-WAM。
 
-  
-
 若 C 不弱于 B，并在 OOD、recovery 和 effect probe 上更强，则支持用非像素物理效果替代未来视频。
-
-  
 
 若显式想象组在 OOD 或 recovery 上稳定领先超过 5%，则说明 test-time imagination 在分布外和恢复任务中仍有价值。
 
-  
-
 # 可信度边界
-
-  
 
 ## 论文明确事实
 
-  
-
 - Fast-WAM 训练时同时使用视频和动作 flow-matching loss。
-
 - 动作 token 不能访问未来视频 token。
-
 - 当前帧 token 不能访问未来视频 token。
-
 - 推理时完全不生成未来视频。
-
 - Video DiT 只对当前帧运行一次，并使用 KV cache。
-
 - Action horizon 为 32，实验使用 10 个动作去噪步。
-
 - RoboTwin 平均为 91.8%，无视频 co-training 为 83.8%。
-
 - LIBERO 平均为 97.6%，无视频 co-training 为 93.5%。
-
 - 真机无视频 co-training 成功率为 10%。
-
 - Fast-WAM 延迟为 190 ms，IDM 为 810 ms。
-
 - 论文没有提供系统性的表示 probe 和完整统计区间。
-
-  
 
 ## ChatGPT 合理推断
 
-  
-
 - 论文更直接证明未来视频预测是有效辅助任务，而不是证明获得了完整物理世界模型。
-
 - 基础 Fast-WAM 更接近任务条件未来模型，而不是动作条件因果动力学模型。
-
 - 视频 loss 的收益可能同时来自动力学信息、视觉语义和多任务正则化。
-
 - 显式未来在频繁闭环 action chunk 中价值较小，但在强 OOD、恢复和反事实规划中可能更重要。
-
 - 推断出的 latent 和 token 形状依赖 Wan VAE 的具体实现。
-
 - 无视频 co-training 模型仍保留 Wan2.2 视频预训练先验。
-
-  
 
 ## 必须查看代码确认
 
-  
-
 - 无视频 co-training 是否仅将视频 loss 权重置零；
-
 - `action_conditioned=false` 时 GT action 是否完全不影响 Video DiT；
-
 - Joint 和 IDM 的精确 attention mask 与去噪顺序；
-
 - RoboTwin 三相机的具体拼接布局；
-
 - RoboTwin 14 维 action/state 的物理定义；
-
 - 真机 action chunk 的执行长度、replan interval 和 episode 数；
-
 - 外部 baseline 是否使用统一数据和评估代码重跑；
-
 - 多 seed 方差、checkpoint selection 和论文对应的具体 Git commit。
-
-> [!warning] 这份 AI Explanation 是中间材料。请不要直接把措辞复制进 My Note。

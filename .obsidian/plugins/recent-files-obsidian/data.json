@@ -1,8 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "li2026wam4d.my.demo",
+      "path": "20-Literature/My-Notes/li2026wam4d.my.demo.md"
+    },
+    {
       "basename": "li2026wam4d.ai",
       "path": "20-Literature/AI-Explanations/li2026wam4d.ai.md"
+    },
+    {
+      "basename": "yuanFastWAMWorldAction2026.ai",
+      "path": "20-Literature/AI-Explanations/yuanFastWAMWorldAction2026.ai.md"
+    },
+    {
+      "basename": "Fast-WAM_论文讲解_紧凑规范版",
+      "path": "20-Literature/AI-Explanations/Fast-WAM_论文讲解_紧凑规范版.md"
     },
     {
       "basename": "yuanFastWAMWorldAction2026",
@@ -11,10 +23,6 @@
     {
       "basename": "Home",
       "path": "Home.md"
-    },
-    {
-      "basename": "yuanFastWAMWorldAction2026.ai",
-      "path": "20-Literature/AI-Explanations/yuanFastWAMWorldAction2026.ai.md"
     },
     {
       "basename": "Paper Verification Prompt",
@@ -51,10 +59,6 @@
     {
       "basename": "Literature Dashboard",
       "path": "20-Literature/Literature Dashboard.md"
-    },
-    {
-      "basename": "20-Literature",
-      "path": "20-Literature/20-Literature.md"
     }
   ],
   "omittedPaths": [],
